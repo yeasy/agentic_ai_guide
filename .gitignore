@@ -1,0 +1,26 @@
+# GitBook
+_book/
+node_modules/
+package-lock.json
+package.json
+
+# OS
+.DS_Store
+Thumbs.db
+
+# IDE
+.idea/
+.vscode/
+*.swp
+*.swo
+
+# Python/Agent artifacts
+__pycache__/
+*.pyc
+.env
+.venv/
+venv/
+*.log
+
+# Obsidian
+.obsidian/

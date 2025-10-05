@@ -1,0 +1,24 @@
+# 第二章：规划与推理引擎
+
+智能体的核心能力在于其推理与规划能力。本章深入探讨如何让 Agent 像人类一样进行复杂推理、分解任务、反思改进，并掌握 Agent 专属的 Prompt 工程技巧。
+
+## 章节导读
+
+- **[2.1 思维链 (CoT) 与复杂推理](2.1_cot.md)**
+  深入理解 Chain-of-Thought 提示技术，学习如何引导模型进行逐步推理。
+
+- **[2.2 任务分解算法：ToT 与 GoT](2.2_decomposition.md)**
+  探讨 Tree of Thoughts 和 Graph of Thoughts 等高级任务分解算法，应对复杂非线性问题。
+
+- **[2.3 ReAct：推理与行动的统一](2.3_react.md)**
+  掌握 ReAct 框架，理解如何将推理（Reasoning）与行动（Acting）交织在一起。
+
+- **[2.4 反思与自我修正 (Reflexion)](2.4_reflexion.md)**
+  学习让 Agent 具备自我反思和迭代改进的能力。
+
+- **[2.5 Agent Prompt Engineering](2.5_prompt_engineering.md)**
+  掌握 Agent 专属的 Prompt 设计技巧，包括角色定义、工具描述和约束条件。
+
+---
+
+**下一节**: [2.1 思维链 (CoT) 与复杂推理](2.1_cot.md)

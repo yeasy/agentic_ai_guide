@@ -1,0 +1,47 @@
+# 第七章：学习、评估与进化
+
+如果 Agent 每天犯同样的错误，那它就算不上真正的智能。本章探讨 Agent 的动态进化能力。不同于 LLM 的预训练（Pre-training）是一次性的，Agent 的学习（Learning）应该是终身的、持续的。
+
+我们将重点关注强化学习在 Agent 中的应用，如何建立科学的评估体系来度量 Agent 的能力，以及如何实现持续的自我进化。
+
+## 章节导读
+
+- **[7.1 从反馈中学习：RLHF 与 RLAIF](7.1_rl.md)**
+  - 解析 RLHF（Reinforcement Learning from Human Feedback）及其变体 RLAIF（AI Feedback）。了解 Agent 如何通过环境反馈（Reward）来调整策略，实现自我改进。
+
+- **[7.2 评估体系：AgentBench 与基准测试](7.2_evaluation.md)**
+  - Agent 很难像分类模型那样用 Accuracy 简单评估。我们将介绍 AgentBench、GAIA 等基准测试框架，以及基于轨迹（Trajectory）的评估方法。
+
+- **[7.3 轨迹分析与行为可解释性](7.3_tracing.md)**
+  - 当 Agent 完成一个任务时，它的决策过程是否合理？学习如何记录、分析和解释 Agent 的行为轨迹，实现可追溯的智能决策。
+
+- **[7.4 持续学习与知识更新](7.4_continuous_learning.md)**
+  - 探讨 Agent 如何通过积累经验（Experience Replay）来微调自身的 Prompt 或记忆库，实现"吃一堑长一智"的持续进化。
+
+- **[本章小结](summary.md)**
+
+## 核心概念预览
+
+```
+                Agent 进化循环
+                
+    ┌──────────────────────────────────┐
+    │                                  │
+    ↓                                  │
+┌────────┐    ┌────────┐    ┌────────┐ │
+│  执行  │ →  │  评估  │ →  │  反思  │ │
+│ Action │    │Evaluate│    │Reflect │ │
+└────────┘    └────────┘    └────┬───┘ │
+                                 │     │
+                                 ↓     │
+                            ┌────────┐ │
+                            │  学习  │─┘
+                            │ Learn  │
+                            └────────┘
+```
+
+下一章我们将进入实战环节，了解当前主流的 Agent 开发框架。
+
+---
+
+**下一节**: [从反馈中学习：RLHF 与 RLAIF](7.1_rl.md)
