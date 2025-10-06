@@ -41,13 +41,15 @@
 │
 ├─ 跨会话持久化
 │   ├─ 小规模（< 10K）→ JSON/SQLite
-│   └─ 大规模 → 向量数据库
+│   └─ 大规模 → 向量数据库 or 图记忆
 │       ├─ 追求简单 → Chroma
 │       ├─ 追求托管 → Pinecone
-│       └─ 追求灵活 → Weaviate
+│       ├─ 追求灵活 → Weaviate
+│       └─ 追求关系推理 → Graphiti/Zep (TKG)
 │
 └─ 需要复杂检索
     ├─ 纯语义 → 向量检索
+    ├─ 关系/时间推理 → 时序知识图谱
     ├─ 混合需求 → Weaviate / Elasticsearch
     └─ 结构化查询 → 传统数据库 + 向量索引
 ```
