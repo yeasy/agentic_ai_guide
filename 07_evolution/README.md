@@ -18,6 +18,9 @@
 - **[7.4 持续学习与知识更新](7.4_continuous_learning.md)**
   - 探讨 Agent 如何通过积累经验（Experience Replay）来微调自身的 Prompt 或记忆库，实现"吃一堑长一智"的持续进化。
 
+- **[7.5 推理能力的提升：从快速响应到深度思考](7.5_reasoning.md)**
+  - 介绍 OpenAI o1/o3 等推理模型如何通过 Chain of Thought 实现深度推理，Deliberative Alignment 提升安全性，以及在 Agent 复杂决策中的应用与成本权衡。
+
 - **[本章小结](summary.md)**
 
 ## 核心概念预览
