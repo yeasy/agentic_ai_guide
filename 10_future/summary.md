@@ -24,4 +24,4 @@ Agentic AI 正在引发一场深刻的软件革命。从理论模型到工程框
 
 ---
 
-**下一节**: [术语表](../appendix/glossary.md)
+**下一节**: [术语表](../11_appendix/11.1_glossary.md)
