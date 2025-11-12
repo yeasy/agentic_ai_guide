@@ -1,6 +1,7 @@
 # 第一章：智能体范式革命
 
-> "The future of AI is not just about chatbots answering questions, but about agents taking actions to solve problems."
+> "AI 的未来不仅是聊天机器人回答问题，而是智能体采取行动解决真实问题。"
+> "The future of AI is not just about chatbots answering questions, but about agents taking actions to solve real problems."
 
 本章将带你推开 Agentic AI 的大门。我们将探索从静态的大语言模型（LLM）向动态、自主的智能体（AI Agent）演进的必然趋势，理解支撑智能体运行的核心理论模型，并拆解一个现代 AI 智能体的解剖学结构。
 
