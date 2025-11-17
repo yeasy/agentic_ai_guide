@@ -21,12 +21,12 @@
 
 | 技术 | 用途 | 特点 |
 |------|------|------|
-| Function Calling | 工具调用接口 | 各平台标准 |
+| **函数调用（Function Calling）** | 工具调用接口 | 各平台标准 |
 | MCP | Agent-工具协议 | 开放标准 |
 | Agent Skills | 领域知识扩展 | 渐进式加载 |
 | A2A | Agent 间协作协议 | 跨平台互操作 |
-| 代码解释器 | 代码执行 | 需要沙箱 |
-| Computer Use | 桌面控制 | 完整交互 |
+| **代码解释器（Code Interpreter）** | 代码执行 | 需要沙箱 |
+| **计算机操作（Computer Use）** | 桌面控制 | 完整交互 |
 
 ## 实践 Checklist
 

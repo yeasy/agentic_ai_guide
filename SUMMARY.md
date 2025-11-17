@@ -8,7 +8,7 @@
   * [1.2 智能体理论基础：感知-规划-行动循环](01_paradigm/1.2_theory.md)
   * [1.3 核心组件全景图](01_paradigm/1.3_components.md)
   * [1.4 Agent 的认知层级](01_paradigm/1.4_cognitive_levels.md)
-  * [1.5 智能体工作流 (Agentic Workflow)：智能体工作流范式](01_paradigm/1.5_agentic_workflow.md)
+  * [1.5 智能体工作流](01_paradigm/1.5_agentic_workflow.md)
   * [本章小结](01_paradigm/summary.md)
 * [第二章：规划与推理引擎](02_reasoning/README.md)
   * [2.1 思维链与复杂推理](02_reasoning/2.1_cot.md)
