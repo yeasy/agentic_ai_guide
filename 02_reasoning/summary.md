@@ -12,7 +12,7 @@
         *   **Reflexion**：赋予了 Agent 自我反思和从错误中学习的能力，实现了系统的自我进化。
 
 2.  **工程化实践**
-    *   **提示词工程 (Prompt Engineering)**：从设计 System Prompt 到结构化输出，构建了 Agent 的行为规范和“人设”。
+    *   **提示词工程 (Prompt Engineering)**：从设计系统提示词 (System Prompt) 到结构化输出，构建了 Agent 的行为规范和“人设”。
     *   **上下文工程 (Context Engineering)**：超越了简单的提示词微调，系统性地解决了有效信息筛选、上下文压缩和 Token 预算管理问题，是构建生产级 Agent 的关键。
 
 ### 下一步

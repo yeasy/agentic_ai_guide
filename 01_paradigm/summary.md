@@ -17,7 +17,7 @@
     *   **大脑 (Brain)**：由 LLM 驱动，负责角色扮演、逻辑推理、任务拆解与规划。
     *   **感知 (Perception)**：多模态输入处理（文本、视觉、音频）及环境状态感知。
     *   **行动 (Action/Tools)**：通过**函数调用（Function Calling）** 使用外部工具（搜索、代码执行、API），是 Agent 改变世界的手。
-    *   **记忆 (Memory)**：克服**上下文窗口（Context Window）** 限制，结合短期记忆（上下文）与长期记忆（向量数据库/检索增强生成 RAG），实现经验的积累。
+    *   **记忆 (Memory)**：克服**上下文窗口**限制，结合短期记忆（上下文）与长期记忆（向量数据库/检索增强生成 RAG），实现经验的积累。
 
 ### 下一步
 理解了“Agent 是什么”和“由什么组成”之后，下一章我们将深入微观层面，详细讲解 Agent 如何像人类一样进行复杂的**规划**、构建**记忆**以及熟练地**使用工具**。
@@ -25,3 +25,8 @@
 ---
 
 **下一节**: [第二章：认知架构详解 (Cognitive Architecture)](../02_reasoning/README.md)
+
+### 本章核心参考文献
+
+*   [**Language Models are Few-Shot Learners**](https://arxiv.org/abs/2005.14165) (GPT-3): 展示了 LLM 的通用潜力。
+*   [**ReAct: Synergizing Reasoning and Acting in Language Models**](https://arxiv.org/abs/2210.03629): 奠定了现代 Agent "推理-再行动" 的基础模式。

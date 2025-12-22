@@ -11,13 +11,13 @@
   - 精选的论文、博客和技术文档，帮助你深入理解 Agentic AI 的理论与实践。
 
 - **[11.3 代码示例](11.3_code_examples.md)**
-  - 可直接运行的代码片段，涵盖常见的 Agent 开发场景。
+  - 可直接运行的代码片段，涵盖常见的智能体开发场景。
 
 - **[11.4 API 参考](11.4_api_reference.md)**
   - 主流 AI 平台的 API 快速参考，包括 OpenAI、Anthropic 等。
 
 - **[11.5 AGENTS.md 规范指南](11.5_agents_md.md)**
-  - 面向 AI 编程 Agent 的项目配置标准，由 Linux Foundation AAIF 治理。
+  - 面向 AI 编程智能体的项目配置标准，由 Linux Foundation AAIF 治理。
 
 - **[11.6 Agentic Coding 实践](11.6_agentic_coding.md)**
   - 从 Vibe Coding 到 Agentic Coding 的范式转变，主流工具实践与最佳方法。
