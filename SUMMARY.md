@@ -5,7 +5,7 @@
 ### 第一部分：单体智能架构
 * [第一章：智能体范式革命](01_paradigm/README.md)
   * [1.1 从大模型到智能体：范式转移](01_paradigm/1.1_shift.md)
-  * [1.2 智能体理论基础：感知-规划-行动循环](01_paradigm/1.2_theory.md)
+  * [1.2 智能体理论基础](01_paradigm/1.2_theory.md)
   * [1.3 核心组件全景图](01_paradigm/1.3_components.md)
   * [1.4 智能体的认知层级](01_paradigm/1.4_cognitive_levels.md)
   * [1.5 智能体工作流](01_paradigm/1.5_agentic_workflow.md)
