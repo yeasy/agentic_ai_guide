@@ -1,23 +1,26 @@
 # 第二章：规划与推理引擎
 
-智能体的核心能力在于其推理与规划能力。本章深入探讨如何让 Agent 像人类一样进行复杂推理、分解任务、反思改进，并掌握 Agent 专属的 Prompt 工程技巧。
+智能体的核心能力在于其推理与规划能力。本章深入探讨如何让智能体像人类一样进行复杂推理、分解任务、反思改进，并掌握智能体专属的提示词工程技巧。
 
 ## 章节导读
 
 - **[2.1 思维链 (CoT) 与复杂推理](2.1_cot.md)**
-  深入理解 Chain-of-Thought 提示技术，学习如何引导模型进行逐步推理。
+  深入理解思维链 (Chain-of-Thought) 提示技术，学习如何引导模型进行逐步推理。
 
 - **[2.2 任务分解算法：ToT 与 GoT](2.2_decomposition.md)**
   探讨 Tree of Thoughts 和 Graph of Thoughts 等高级任务分解算法，应对复杂非线性问题。
 
 - **[2.3 ReAct：推理与行动的统一](2.3_react.md)**
-  掌握 ReAct 框架，理解如何将推理（Reasoning）与行动（Acting）交织在一起。
+  掌握 ReAct 框架，理解如何将推理 (Reasoning) 与行动 (Acting) 交织在一起。
 
 - **[2.4 反思与自我修正 (Reflexion)](2.4_reflexion.md)**
-  学习让 Agent 具备自我反思和迭代改进的能力。
+  学习让智能体具备自我反思和迭代改进的能力。
 
-- **[2.5 Agent Prompt Engineering](2.5_prompt_engineering.md)**
-  掌握 Agent 专属的 Prompt 设计技巧，包括角色定义、工具描述和约束条件。
+- **[2.5 智能体提示词工程](2.5_prompt_engineering.md)**
+  掌握智能体专属的提示词设计技巧，包括角色定义、工具描述和约束条件。
+
+- **[2.6 上下文工程 (Context Engineering)](2.6_context_engineering.md)**
+  深入理解上下文工程的核心策略，包括上下文的写入、选择、压缩与隔离，掌握智能体工程师的核心技能。
 
 ---
 
