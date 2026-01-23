@@ -72,7 +72,7 @@
   * [9.4 企业级安全与合规部署](09_agentops/9.4_enterprise.md)
   * [本章小结](09_agentops/summary.md)
 * [第十章：安全、伦理与 AGI 展望](10_future/README.md)
-  * [10.1 安全边界：Prompt 注入与防御策略](10_future/10.1_security.md)
+  * [10.1 安全边界：提示词注入与防御策略](10_future/10.1_security.md)
   * [10.2 价值对齐与风险控制](10_future/10.2_alignment.md)
   * [10.3 智能体的法律与伦理边界](10_future/10.3_ethics.md)
   * [10.4 迈向通用人工智能](10_future/10.4_agi_path.md)
