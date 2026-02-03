@@ -24,3 +24,5 @@ venv/
 
 # Obsidian
 .obsidian/
+
+.agent
