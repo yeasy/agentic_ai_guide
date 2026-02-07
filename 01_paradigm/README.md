@@ -1,26 +1,28 @@
 # 第一章：智能体范式革命
 
 > "AI 的未来不仅是聊天机器人回答问题，而是智能体采取行动解决真实问题。"
-> "The future of AI is not just about chatbots answering questions, but about agents taking actions to solve real problems."
 
 本章将带你推开智能体 AI 的大门。我们将探索从静态的大语言模型（LLM）向动态、自主的智能体（AI Agent）演进的必然趋势，理解支撑智能体运行的核心理论模型，并拆解一个现代 AI 智能体的解剖学结构。
 
-## 章节导读
+## 本章概览
 
-- **[1.1 从 Prompt 到 Agent：范式转移](1.1_shift.md)**
-  探讨为什么仅有 LLM 是不够的，以及 Agent 如何通过引入"自主性"和"循环"来突破 LLM 的天花板。
+本章旨在构建智能体的宏观认知框架，从发展范式、理论模型到核心组件。
 
-- **[1.2 智能体理论基础](1.2_theory.md)**
-  回顾经典人工智能中的"理性智能体"概念，结合强化学习中的"状态-动作-奖励"闭环，建立坚实的理论基础。
+* **[1.1 从 Prompt 到 Agent：范式转移](1.1_shift.md)**：探讨为什么仅有 LLM 是不够的，以及 Agent 如何通过引入"自主性"和"循环"来突破 LLM 的天花板。
+* **[1.2 智能体理论基础](1.2_theory.md)**：回顾经典人工智能中的"理性智能体"概念，结合强化学习中的"状态-动作-奖励"闭环，建立坚实的理论基础。
+* **[1.3 核心组件全景图](1.3_components.md)**：详细拆解智能体的四大核心组件：大脑（Brain）、感知（Perception）、行动（Tools）与记忆（Memory）。
+* **[1.4 智能体的认知层级](1.4_cognitive_levels.md)**：从简单的反射型智能体到具备学习能力的高级智能体，理解不同认知层级的能力边界。
+* **[1.5 Agentic Workflow：智能体工作流范式](1.5_agentic_workflow.md)**：介绍 Andrew Ng 提出的四种 Agentic Workflow 设计模式。
 
-- **[1.3 核心组件全景图](1.3_components.md)**
-  详细拆解智能体的四大核心组件：作为控制中枢的大脑（Brain）、辅助感知的传感器（Perception）、执行任务的手（Tools）以及存储经验的记忆（Memory）。
+## 学习目标
 
-- **[1.4 智能体的认知层级](1.4_cognitive_levels.md)**
-  从简单的反射型智能体到具备学习能力的高级智能体，理解不同认知层级的能力边界。
+完成本章后，你将能够：
 
-- **[1.5 Agentic Workflow：智能体工作流范式](1.5_agentic_workflow.md)**
-  介绍 Andrew Ng 提出的四种 Agentic Workflow 设计模式。
+1. **理解**智能体与 LLM 的本质区别
+2. **掌握**智能体的核心理论模型 (PEAS, POMDP)
+3. **熟悉**智能体的四大核心组件及其交互方式
+4. **评估**智能体的认知层级与能力边界
+5. **应用**智能体工作流范式优化系统设计
 
 ---
 
