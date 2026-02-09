@@ -2,7 +2,7 @@
 
 * [前言](README.md)
 
-### 第一部分：单体智能架构
+## 第一部分：单体智能架构
 
 * [第一章：智能体范式革命](01_paradigm/README.md)
   * [1.1 从大模型到智能体：范式转移](01_paradigm/1.1_shift.md)
@@ -17,25 +17,26 @@
   * [2.3 ReAct：推理与行动的统一](02_reasoning/2.3_react.md)
   * [2.4 反思与自我修正](02_reasoning/2.4_reflexion.md)
   * [2.5 智能体提示词工程](02_reasoning/2.5_prompt_engineering.md)
-  * [2.6 上下文工程](02_reasoning/2.6_context_engineering.md)
   * [本章小结](02_reasoning/summary.md)
 * [第三章：记忆系统架构](03_memory/README.md)
   * [3.1 记忆的认知模型：工作记忆 vs 长期记忆](03_memory/3.1_memory_models.md)
-  * [3.2 向量数据库选型：Pinecone、Weaviate、Chroma](03_memory/3.2_vector_databases.md)
-  * [3.3 RAG 进阶：检索增强生成的最佳实践](03_memory/3.3_rag_advanced.md)
-  * [3.4 上下文窗口管理与压缩策略](03_memory/3.4_context_management.md)
-  * [3.5 图记忆与时序知识图谱](03_memory/3.5_graph_memory.md)
+  * [3.2 短期记忆算法](03_memory/3.2_short_term_memory.md)
+  * [3.3 向量数据库选型](03_memory/3.3_vector_databases.md)
+  * [3.4 RAG 进阶实践](03_memory/3.4_rag_advanced.md)
+  * [3.5 图记忆与知识图谱](03_memory/3.5_graph_memory.md)
+  * [3.6 上下文工程](03_memory/3.6_context_engineering.md)
   * [本章小结](03_memory/summary.md)
 * [第四章：工具使用与环境交互](04_tools/README.md)
   * [4.1 工具使用概述与分类](04_tools/4.1_overview.md)
-  * [4.2 函数调用详解](04_tools/4.2_function_calling.md)
+  * [4.2 工具使用机制](04_tools/4.2_tool_use.md)
   * [4.3 MCP：模型上下文协议](04_tools/4.3_mcp.md)
   * [4.4 Agent Skills：能力扩展规范](04_tools/4.4_skills.md)
-  * [4.5 环境交互：代码解释器与浏览器操作](04_tools/4.5_environment.md)
+  * [4.5 浏览器自动化与计算机操作](04_tools/4.5_browser.md)
   * [4.6 多模态感知与行动](04_tools/4.6_multimodal.md)
+  * [4.7 智能体交互体验：人机交互接口](04_tools/4.7_agentic_ux.md)
   * [本章小结](04_tools/summary.md)
 
-### 第二部分：群体智能与进化
+## 第二部分：群体智能与进化
 
 * [第五章：多智能体协作模式](05_collaboration/README.md)
   * [5.1 协作架构：层级 vs 扁平 vs 动态](05_collaboration/5.1_architectures.md)
@@ -58,7 +59,7 @@
   * [7.5 推理能力的提升：从快速响应到深度思考](07_evolution/7.5_reasoning.md)
   * [本章小结](07_evolution/summary.md)
 
-### 第三部分：工程实践与未来
+## 第三部分：工程实践与未来
 
 * [第八章：开发框架全景](08_frameworks/README.md)
   * [8.1 框架生态概览与选型指南](08_frameworks/8.1_ecosystem.md)
@@ -84,7 +85,7 @@
     * [10.5 最佳实践与复盘](10_agentic_coding/10.5_best_practices.md)
     * [本章小结](10_agentic_coding/summary.md)
 
-### 第四部分：未来展望
+## 第四部分：未来展望
 
 * [第十一章：安全、伦理与未来](11_future/README.md)
     * [11.1 智能体安全风险](11_future/11.1_security.md)
