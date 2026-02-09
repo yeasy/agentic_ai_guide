@@ -3,6 +3,7 @@
 * [前言](README.md)
 
 ### 第一部分：单体智能架构
+
 * [第一章：智能体范式革命](01_paradigm/README.md)
   * [1.1 从大模型到智能体：范式转移](01_paradigm/1.1_shift.md)
   * [1.2 智能体理论基础](01_paradigm/1.2_theory.md)
@@ -35,6 +36,7 @@
   * [本章小结](04_tools/summary.md)
 
 ### 第二部分：群体智能与进化
+
 * [第五章：多智能体协作模式](05_collaboration/README.md)
   * [5.1 协作架构：层级 vs 扁平 vs 动态](05_collaboration/5.1_architectures.md)
   * [5.2 角色分工与 SOP 流程编排](05_collaboration/5.2_roles_sop.md)
@@ -57,6 +59,7 @@
   * [本章小结](07_evolution/summary.md)
 
 ### 第三部分：工程实践与未来
+
 * [第八章：开发框架全景](08_frameworks/README.md)
   * [8.1 框架生态概览与选型指南](08_frameworks/8.1_ecosystem.md)
   * [8.2 LangChain 与 LangGraph：从链到图](08_frameworks/8.2_langchain.md)
