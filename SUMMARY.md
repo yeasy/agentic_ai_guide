@@ -22,7 +22,7 @@
   * [3.1 记忆的认知模型](03_memory/3.1_memory_models.md)
   * [3.2 短期记忆管理](03_memory/3.2_short_term_memory.md)
   * [3.3 长期记忆与向量数据库](03_memory/3.3_vector_databases.md)
-  * [3.4 RAG 进阶实践](03_memory/3.4_rag_advanced.md)
+  * [3.4 RAG 系统设计与优化](03_memory/3.4_rag_advanced.md)
   * [3.5 图记忆与知识图谱](03_memory/3.5_graph_memory.md)
   * [3.6 上下文工程](03_memory/3.6_context_engineering.md)
   * [本章小结](03_memory/summary.md)
