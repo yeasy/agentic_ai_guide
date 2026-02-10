@@ -22,6 +22,9 @@
 - **[8.6 平台级产品：OpenAI Assistants 与 Claude Artifacts](8.6_platforms.md)**
   - 主流 AI 厂商的智能体产品解析。OpenAI 的 Assistants API、Anthropic 的 Claude 工具使用，以及它们与开源框架的对比。
 
+- **[8.7 框架性能基准评测](8.7_performance.md)**
+  - 哪个框架最快？哪个最省钱？对比 LangChain, AutoGen, CrewAI 等框架在延迟、吞吐量和 Token 消耗方面的性能表现。
+
 - **[本章小结](summary.md)**
 
 ## 框架选型速查表
