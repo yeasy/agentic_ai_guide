@@ -27,22 +27,26 @@
 
 具体示例如下：
 
-```
-              AgentOps 技术栈
-              
-┌──────────────────────────────────────┐
-│           可观测性层                  │
-│  LangSmith | LangFuse | Arize | W&B  │
-├──────────────────────────────────────┤
-│           编排层                      │
-│   LangGraph | AutoGen | CrewAI       │
-├──────────────────────────────────────┤
-│           模型层                      │
-│  OpenAI | Anthropic | Local LLMs    │
-├──────────────────────────────────────┤
-│           基础设施层                  │
-│   Vector DB | Cache | Message Queue  │
-└──────────────────────────────────────┘
+```mermaid
+block-beta
+    columns 1
+    title("AgentOps 技术栈")
+    block:L1
+        l1_title("可观测性层")
+        l1_desc("LangSmith | LangFuse | Arize | W&B")
+    end
+    block:L2
+        l2_title("编排层")
+        l2_desc("LangGraph | AutoGen | CrewAI")
+    end
+    block:L3
+        l3_title("模型层")
+        l3_desc("OpenAI | Anthropic | Local LLMs")
+    end
+    block:L4
+        l4_title("基础设施层")
+        l4_desc("Vector DB | Cache | Message Queue")
+    end
 ```
 
 下一章将展望智能体技术的未来，探讨安全、对齐和 AGI 的宏大愿景。

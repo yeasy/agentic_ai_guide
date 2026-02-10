@@ -27,22 +27,12 @@
 
 具体示例如下：
 
-```
-                智能体进化循环
-                
-    ┌──────────────────────────────────┐
-    │                                  │
-    ↓                                  │
-┌────────┐    ┌────────┐    ┌────────┐ │
-│  行动  │ →  │  评估  │ →  │  反思  │ │
-│ Action │    │ Evaluate │    │ Reflect│ │
-└────────┘    └────────┘    └────┬───┘ │
-                                 │     │
-                                 ↓     │
-                            ┌────────┐ │
-                            │  学习  │─┘
-                            │ Learn  │
-                            └────────┘
+```mermaid
+graph TD
+    Action[行动 Action] --> Evaluate[评估 Evaluate]
+    Evaluate --> Reflect[反思 Reflect]
+    Reflect --> Learn[学习 Learn]
+    Learn --> Action
 ```
 
 下一章将进入实战环节，了解当前主流的智能体开发框架。
