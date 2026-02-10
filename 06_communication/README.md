@@ -38,6 +38,8 @@ graph TD
     end
 ```
 
+图 6-0：自然语言与结构化通信对比 (Natural Language vs Structured Communication)
+
 下一章将探讨智能体如何通过学习和进化不断提升自身能力。
 
 ---

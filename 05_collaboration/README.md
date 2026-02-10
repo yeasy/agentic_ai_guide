@@ -36,6 +36,8 @@ graph TD
     end
 ```
 
+图 5-0：多智能体协作系统示意图 (Multi-Agent Collaboration System Diagram)
+
 下一章将探讨智能体之间如何进行有效的通信，以及如何模拟真实的社会行为。
 
 ---

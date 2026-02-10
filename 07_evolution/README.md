@@ -35,6 +35,8 @@ graph TD
     Learn --> Action
 ```
 
+图 7-0：智能体进化循环 (Agent Evolution Cycle)
+
 下一章将进入实战环节，了解当前主流的智能体开发框架。
 
 ---

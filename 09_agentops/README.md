@@ -49,6 +49,8 @@ block-beta
     end
 ```
 
+图 9-0：AgentOps 技术栈概览 (AgentOps Tech Stack Overview)
+
 下一章将展望智能体技术的未来，探讨安全、对齐和 AGI 的宏大愿景。
 
 ---
