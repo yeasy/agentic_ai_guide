@@ -19,7 +19,7 @@
   - 探讨智能体如何通过经验回放 (Experience Replay) 来微调自身的提示词或记忆库，实现"吃一堑长一智"的持续进化。
 
 - **[7.5 推理能力的提升：从快速响应到深度思考](7.5_reasoning.md)**
-  - 介绍 OpenAI o1/o3 等推理模型如何通过思维链 (Chain of Thought) 实现深度推理，审慎对齐 (Deliberative Alignment) 提升安全性，以及在智能体复杂决策中的应用与成本权衡。
+  - 介绍 OpenAI o3-pro / o3-mini 等推理模型如何通过思维链 (Chain of Thought) 实现深度推理，审慎对齐 (Deliberative Alignment) 提升安全性，以及在智能体复杂决策中的应用与成本权衡。
 
 - **[本章小结](summary.md)**
 

@@ -72,7 +72,7 @@
   * [9.1 设计模式：从 Workflow 到 Agent](09_agentops/9.1_design_patterns.md)
   * [9.2 可观测性与调试](09_agentops/9.2_observability.md)
   * [9.3 性能优化与成本控制](09_agentops/9.3_optimization.md)
-  * [9.4 企业级部署：架构、沙箱与安全性](09_agentops/9.4_enterprise.md)
+  * [9.4 企业级智能体平台：架构、安全与治理](09_agentops/9.4_enterprise.md)
   * [9.5 故障模式与韧性设计](09_agentops/9.5_failures.md)
   * [本章小结](09_agentops/summary.md)
 * [第十章 智能体编程实践](10_agentic_coding/README.md)
