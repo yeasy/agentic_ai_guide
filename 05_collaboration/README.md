@@ -24,6 +24,11 @@
 
 ```mermaid
 graph TD
+    %% Agentic Design System
+    classDef agent fill:#e6f7ff,stroke:#1890ff,stroke-width:2px;
+    classDef tool fill:#f6ffed,stroke:#52c41a,stroke-width:2px;
+    classDef memory fill:#fff0f6,stroke:#eb2f96,stroke-width:2px;
+
     subgraph MAS [多智能体协作系统]
         Manager[经理智能体 Manager] -->|协调| W1[Worker1]
         Manager -->|分派任务| Memory[Shared Memory]
@@ -34,6 +39,10 @@ graph TD
         Memory <--> W2
         Memory <--> W3
     end
+    
+    class Manager agent;
+    class W1,W2,W3 tool;
+    class Memory memory;
 ```
 
 图 5-0：多智能体协作系统示意图 (Multi-Agent Collaboration System Diagram)

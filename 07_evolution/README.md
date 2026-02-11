@@ -29,10 +29,17 @@
 
 ```mermaid
 graph TD
+    %% Agentic Design System
+    classDef agent fill:#e6f7ff,stroke:#1890ff,stroke-width:2px;
+    classDef tool fill:#f6ffed,stroke:#52c41a,stroke-width:2px;
+
     Action[行动 Action] --> Evaluate[评估 Evaluate]
     Evaluate --> Reflect[反思 Reflect]
     Reflect --> Learn[学习 Learn]
     Learn --> Action
+    
+    class Action,Learn tool;
+    class Evaluate,Reflect agent;
 ```
 
 图 7-0：智能体进化循环 (Agent Evolution Cycle)

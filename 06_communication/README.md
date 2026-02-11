@@ -27,6 +27,10 @@
 
 ```mermaid
 graph TD
+    %% Agentic Design System
+    classDef agent fill:#e6f7ff,stroke:#1890ff,stroke-width:2px;
+    classDef tool fill:#f6ffed,stroke:#52c41a,stroke-width:2px;
+
     subgraph NaturalLanguage [自然语言通信]
         A1[智能体 A] -->|帮我查一下这个数据| B1[智能体 B]
         B1 -->|理解意图 (有歧义)| B1Result[结果]
@@ -36,6 +40,9 @@ graph TD
         A2[智能体 A] -->|"{action: 'query', params:{}}"| B2[智能体 B]
         B2 -->|JSON解析 (精确)| B2Result[结果]
     end
+    
+    class A1,A2,B1,B2 agent;
+    class B1Result,B2Result tool;
 ```
 
 图 6-0：自然语言与结构化通信对比 (Natural Language vs Structured Communication)
