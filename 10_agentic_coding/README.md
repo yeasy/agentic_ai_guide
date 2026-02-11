@@ -9,14 +9,16 @@
 *   [10.2 智能体编程原理](10.2_loop.md)
     *   Agent Loop 与状态机
     *   不可见状态与调试
-*   [10.3 主流工具详解](10.3_tools.md)
-    *   Cursor, Claude Code, GitHub Copilot
-*   [10.4 智能体开发工作流](10.4_workflow.md)
-    *   新角色的转变
-    *   Plan Mode 与并行智能体
-*   [10.5 最佳实践与复盘](10.5_best_practices.md)
-    *   Claude Skills 与企业级实践
-    *   刻意练习与安全边界
+*   [10.3 常见工具](10.3_tools.md)
+    *   Copilot, Cursor, Cline, Claude Code, Codex
+*   [10.4 开发方法论](10.4_workflow.md)
+    *   P-D-E-R 开发闭环
+    *   任务分解与提示词设计
+    *   TDD、架构可视化、调试方法
+*   [10.5 工程化实践](10.5_best_practices.md)
+    *   上下文管理与代码审查
+    *   安全边界与知识沉淀体系
+    *   刻意练习与企业级实践
 
 ## 本章目标
 
