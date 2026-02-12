@@ -51,4 +51,4 @@ graph TD
 
 ---
 
-**下一节**: [6.1 Protocols](6.1_protocols.md)
+**下一节**: [6.1 智能体间通信协议设计](6.1_protocols.md)

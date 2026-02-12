@@ -51,8 +51,8 @@ block-beta
 
 图 9-0：AgentOps 技术栈概览 (AgentOps Tech Stack Overview)
 
-下一章将展望智能体技术的未来，探讨安全、对齐和 AGI 的宏大愿景。
+下一章将探讨智能体编程实践，介绍主流工具与开发工作流。
 
 ---
 
-**下一节**: [设计模式：从 ReAct 到 Planner 与 Reflection](9.1_design_patterns.md)
+**下一节**: [9.1 设计模式：从 Workflow 到 Agent](9.1_design_patterns.md)
