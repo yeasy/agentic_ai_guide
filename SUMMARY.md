@@ -1,6 +1,6 @@
 # Summary
 
-* [前言](README.md)
+* [智能体 AI 权威指南](README.md)
 
 ## 第一部分：单体智能架构
 
@@ -29,7 +29,7 @@
 * [第四章：工具使用与环境交互](04_tools/README.md)
   * [4.1 工具使用概述与分类](04_tools/4.1_overview.md)
   * [4.2 工具使用机制](04_tools/4.2_tool_use.md)
-  * [4.3 MCP：模型上下文协议](04_tools/4.3_mcp.md)
+  * [4.3 工具连接协议：模型上下文与工具服务](04_tools/4.3_mcp.md)
   * [4.4 智能体技能：能力扩展规范](04_tools/4.4_skills.md)
   * [4.5 浏览器自动化与计算机操作](04_tools/4.5_browser.md)
   * [4.6 多模态能力](04_tools/4.6_multimodal.md)
@@ -38,7 +38,7 @@
 ## 第二部分：群体智能与进化
 
 * [第五章：多智能体协作模式](05_collaboration/README.md)
-  * [5.1 协作架构：层级 vs 扁平 vs 动态](05_collaboration/5.1_architectures.md)
+  * [5.1 协作架构：层级、扁平与动态](05_collaboration/5.1_architectures.md)
   * [5.2 角色分工与 SOP 流程编排](05_collaboration/5.2_roles_sop.md)
   * [5.3 动态组队与自适应编排](05_collaboration/5.3_dynamic_teaming.md)
   * [5.4 人机协作](05_collaboration/5.4_hitl.md)
@@ -48,7 +48,7 @@
   * [6.2 生成式社会模拟：斯坦福小镇解析](06_communication/6.2_social_simulation.md)
   * [6.3 博弈论视角下的冲突解决](06_communication/6.3_game_theory.md)
   * [6.4 涌现行为与集体智慧](06_communication/6.4_emergence.md)
-  * [6.5 A2A：智能体-智能体协议](06_communication/6.5_a2a.md)
+  * [6.5 智能体间互操作协议](06_communication/6.5_a2a.md)
   * [本章小结](06_communication/summary.md)
 * [第七章：学习、评估与进化](07_evolution/README.md)
   * [7.1 从反馈中学习：RLHF 与 RLAIF](07_evolution/7.1_rl.md)
@@ -61,11 +61,11 @@
 
 * [第八章：开发框架全景](08_frameworks/README.md)
   * [8.1 框架生态概览与选型指南](08_frameworks/8.1_ecosystem.md)
-  * [8.2 LangChain 与 LangGraph：从链到图](08_frameworks/8.2_langchain.md)
-  * [8.3 LlamaIndex：数据驱动的 RAG 专家](08_frameworks/8.3_llamaindex.md)
-  * [8.4 多体协作：AutoGen 与 CrewAI 实战](08_frameworks/8.4_multi_agent.md)
-  * [8.5 企业级集成：Semantic Kernel 与现有系统](08_frameworks/8.5_enterprise.md)
-  * [8.6 平台级产品：OpenAI Assistants 与 Claude Tool Use](08_frameworks/8.6_platforms.md)
+  * [8.2 从链到图：流程编排进化](08_frameworks/8.2_langchain.md)
+  * [8.3 数据驱动的 RAG 框架](08_frameworks/8.3_llamaindex.md)
+  * [8.4 多体协作：多智能体框架实战](08_frameworks/8.4_multi_agent.md)
+  * [8.5 企业级集成：与现有系统整合](08_frameworks/8.5_enterprise.md)
+  * [8.6 平台级产品：平台接口与工具使用](08_frameworks/8.6_platforms.md)
   * [8.7 框架性能基准评测](08_frameworks/8.7_performance.md)
   * [本章小结](08_frameworks/summary.md)
 * [第九章：AgentOps 与生产化落地](09_agentops/README.md)
@@ -75,12 +75,12 @@
   * [9.4 企业级智能体平台：架构、安全与治理](09_agentops/9.4_enterprise.md)
   * [9.5 故障模式与韧性设计](09_agentops/9.5_failures.md)
   * [本章小结](09_agentops/summary.md)
-* [第十章 智能体编程实践](10_agentic_coding/README.md)
+* [第十章：智能体编程实践](10_agentic_coding/README.md)
   * [10.1 编程范式转移](10_agentic_coding/10.1_paradigm.md)
   * [10.2 智能体编程原理](10_agentic_coding/10.2_loop.md)
-  * [10.3 主流 Agentic Coding 工具](10_agentic_coding/10.3_tools.md)
-  * [10.4 智能体开发工作流](10_agentic_coding/10.4_workflow.md)
-  * [10.5 最佳实践与复盘](10_agentic_coding/10.5_best_practices.md)
+  * [10.3 常见工具](10_agentic_coding/10.3_tools.md)
+  * [10.4 开发方法论](10_agentic_coding/10.4_workflow.md)
+  * [10.5 工程化实践](10_agentic_coding/10.5_best_practices.md)
   * [本章小结](10_agentic_coding/summary.md)
 ## 第四部分：未来展望
 
@@ -95,6 +95,6 @@
   * [12.2 推荐论文与阅读清单](12_appendix/12.2_reading_list.md)
   * [12.3 示例代码仓库](12_appendix/12.3_code_examples.md)
   * [12.4 框架版本与 API 参考](12_appendix/12.4_api_reference.md)
-  * [12.5 AGENTS.md 规范指南](12_appendix/12.5_agents_md.md)
+  * [12.5 项目说明文件规范指南](12_appendix/12.5_agents_md.md)
   * [12.6 框架版本速查表](12_appendix/12.6_versions.md)
   * [12.7 案例模板与 Checklist](12_appendix/12.7_case_templates.md)

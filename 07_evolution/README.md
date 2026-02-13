@@ -7,7 +7,7 @@
 ## 章节导读
 
 - **[7.1 从反馈中学习：RLHF 与 RLAIF](7.1_rl.md)**
-  - 解析 **人类反馈强化学习 (RLHF)** 及其变体 **AI 反馈强化学习 (RLAIF)**。了解智能体如何通过环境奖励 (Reward) 来调整策略，实现自我改进。
+  - 解析**人类反馈强化学习 (RLHF)**及其变体**AI 反馈强化学习 (RLAIF)**。了解智能体如何通过环境奖励 (Reward) 来调整策略，实现自我改进。
 
 - **[7.2 评估体系：AgentBench 与基准测试](7.2_evaluation.md)**
   - 智能体很难像分类模型那样用准确率 (Accuracy) 简单评估。本章将介绍 AgentBench、GAIA 等基准测试框架，以及基于轨迹 (Trajectory) 的评估方法。
@@ -19,7 +19,7 @@
   - 探讨智能体如何通过经验回放 (Experience Replay) 来微调自身的提示词或记忆库，实现"吃一堑长一智"的持续进化。
 
 - **[7.5 推理能力的提升：从快速响应到深度思考](7.5_reasoning.md)**
-  - 介绍 OpenAI o3-pro / o3-mini 等推理模型如何通过思维链 (Chain of Thought) 实现深度推理，审慎对齐 (Deliberative Alignment) 提升安全性，以及在智能体复杂决策中的应用与成本权衡。
+  - 介绍推理增强模型如何通过思维链（Chain of Thought）实现深度推理，审慎对齐（Deliberative Alignment）提升安全性，以及在智能体复杂决策中的应用与成本权衡。
 
 - **[本章小结](summary.md)**
 
@@ -42,10 +42,10 @@ graph TD
     class Evaluate,Reflect agent;
 ```
 
-图 7-0：智能体进化循环 (Agent Evolution Cycle)
+图 7-0：智能体进化循环
 
 下一章将进入实战环节，了解当前主流的智能体开发框架。
 
 ---
 
-**下一节**: [从反馈中学习：RLHF 与 RLAIF](7.1_rl.md)
+**下一节**: [7.1 从反馈中学习：RLHF 与 RLAIF](7.1_rl.md)
