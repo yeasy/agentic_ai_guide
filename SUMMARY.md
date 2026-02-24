@@ -57,7 +57,7 @@
   * [7.4 持续学习与知识更新](07_evolution/7.4_continuous_learning.md)
   * [7.5 推理能力的提升：从快速响应到深度思考](07_evolution/7.5_reasoning.md)
   * [本章小结](07_evolution/summary.md)
-## 第三部分：工程实践与未来
+## 第三部分：工程实践与落地
 
 * [第八章：开发框架全景](08_frameworks/README.md)
   * [8.1 框架生态概览与选型指南](08_frameworks/8.1_ecosystem.md)
@@ -90,6 +90,9 @@
   * [11.3 智能体的法律与伦理边界](11_future/11.3_ethics.md)
   * [11.4 迈向通用人工智能](11_future/11.4_agi_path.md)
   * [本章小结](11_future/summary.md)
+
+## 第五部分：附录
+
 * [第十二章：附录](12_appendix/README.md)
   * [12.1 术语表](12_appendix/12.1_glossary.md)
   * [12.2 推荐论文与阅读清单](12_appendix/12.2_reading_list.md)
