@@ -24,7 +24,6 @@
 
 ## 核心概念预览
 
-具体示例如下：
 
 ```mermaid
 block-beta
