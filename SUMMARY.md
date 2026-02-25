@@ -1,24 +1,24 @@
-# Summary
+# 目录
 
 * [智能体 AI 权威指南](README.md)
 
 ## 第一部分：单体智能架构
 
-* [第一章：智能体范式革命](01_paradigm/README.md)
+* [第一章 智能体范式革命](01_paradigm/README.md)
   * [1.1 从大模型到智能体](01_paradigm/1.1_shift.md)
   * [1.2 智能体理论基础](01_paradigm/1.2_theory.md)
   * [1.3 核心组件：大脑、感知、行动与记忆](01_paradigm/1.3_components.md)
   * [1.4 智能体的认知层级](01_paradigm/1.4_cognitive_levels.md)
   * [1.5 智能体工作流](01_paradigm/1.5_agentic_workflow.md)
   * [本章小结](01_paradigm/summary.md)
-* [第二章：规划与推理引擎](02_reasoning/README.md)
+* [第二章 规划与推理引擎](02_reasoning/README.md)
   * [2.1 思维链与线性推理](02_reasoning/2.1_cot.md)
   * [2.2 任务分解与规划算法](02_reasoning/2.2_decomposition.md)
   * [2.3 ReAct：推理与行动的统一](02_reasoning/2.3_react.md)
   * [2.4 反思与自我修正](02_reasoning/2.4_reflexion.md)
   * [2.5 智能体提示词工程](02_reasoning/2.5_prompt_engineering.md)
   * [本章小结](02_reasoning/summary.md)
-* [第三章：记忆系统架构](03_memory/README.md)
+* [第三章 记忆系统架构](03_memory/README.md)
   * [3.1 记忆的认知模型](03_memory/3.1_memory_models.md)
   * [3.2 短期记忆管理](03_memory/3.2_short_term_memory.md)
   * [3.3 长期记忆与向量数据库](03_memory/3.3_vector_databases.md)
@@ -26,7 +26,7 @@
   * [3.5 图记忆与知识图谱](03_memory/3.5_graph_memory.md)
   * [3.6 上下文工程](03_memory/3.6_context_engineering.md)
   * [本章小结](03_memory/summary.md)
-* [第四章：工具使用与环境交互](04_tools/README.md)
+* [第四章 工具使用与环境交互](04_tools/README.md)
   * [4.1 工具使用概述与分类](04_tools/4.1_overview.md)
   * [4.2 工具使用机制](04_tools/4.2_tool_use.md)
   * [4.3 工具连接协议：模型上下文与工具服务](04_tools/4.3_mcp.md)
@@ -37,20 +37,20 @@
   * [本章小结](04_tools/summary.md)
 ## 第二部分：群体智能与进化
 
-* [第五章：多智能体协作模式](05_collaboration/README.md)
+* [第五章 多智能体协作模式](05_collaboration/README.md)
   * [5.1 协作架构：层级、扁平与动态](05_collaboration/5.1_architectures.md)
   * [5.2 角色分工与 SOP 流程编排](05_collaboration/5.2_roles_sop.md)
   * [5.3 动态组队与自适应编排](05_collaboration/5.3_dynamic_teaming.md)
   * [5.4 人机协作](05_collaboration/5.4_hitl.md)
   * [本章小结](05_collaboration/summary.md)
-* [第六章：通信与社会模拟](06_communication/README.md)
+* [第六章 通信与社会模拟](06_communication/README.md)
   * [6.1 智能体间通信协议设计](06_communication/6.1_protocols.md)
   * [6.2 生成式社会模拟：斯坦福小镇解析](06_communication/6.2_social_simulation.md)
   * [6.3 博弈论视角下的冲突解决](06_communication/6.3_game_theory.md)
   * [6.4 涌现行为与集体智慧](06_communication/6.4_emergence.md)
   * [6.5 智能体间互操作协议](06_communication/6.5_a2a.md)
   * [本章小结](06_communication/summary.md)
-* [第七章：学习、评估与进化](07_evolution/README.md)
+* [第七章 学习、评估与进化](07_evolution/README.md)
   * [7.1 从反馈中学习：RLHF 与 RLAIF](07_evolution/7.1_rl.md)
   * [7.2 评估体系：AgentBench 与基准测试](07_evolution/7.2_evaluation.md)
   * [7.3 轨迹分析与行为可解释性](07_evolution/7.3_tracing.md)
@@ -59,7 +59,7 @@
   * [本章小结](07_evolution/summary.md)
 ## 第三部分：工程实践与落地
 
-* [第八章：开发框架全景](08_frameworks/README.md)
+* [第八章 开发框架全景](08_frameworks/README.md)
   * [8.1 框架生态概览与选型指南](08_frameworks/8.1_ecosystem.md)
   * [8.2 从链到图：流程编排进化](08_frameworks/8.2_langchain.md)
   * [8.3 数据驱动的 RAG 框架](08_frameworks/8.3_llamaindex.md)
@@ -68,14 +68,14 @@
   * [8.6 平台级产品：平台接口与工具使用](08_frameworks/8.6_platforms.md)
   * [8.7 框架性能基准评测](08_frameworks/8.7_performance.md)
   * [本章小结](08_frameworks/summary.md)
-* [第九章：AgentOps 与生产化落地](09_agentops/README.md)
+* [第九章 AgentOps 与生产化落地](09_agentops/README.md)
   * [9.1 设计模式：从 Workflow 到 Agent](09_agentops/9.1_design_patterns.md)
   * [9.2 可观测性与调试](09_agentops/9.2_observability.md)
   * [9.3 性能优化与成本控制](09_agentops/9.3_optimization.md)
   * [9.4 企业级智能体平台：架构、安全与治理](09_agentops/9.4_enterprise.md)
   * [9.5 故障模式与韧性设计](09_agentops/9.5_failures.md)
   * [本章小结](09_agentops/summary.md)
-* [第十章：智能体编程实践](10_agentic_coding/README.md)
+* [第十章 智能体编程实践](10_agentic_coding/README.md)
   * [10.1 编程范式转移](10_agentic_coding/10.1_paradigm.md)
   * [10.2 智能体编程原理](10_agentic_coding/10.2_loop.md)
   * [10.3 常见工具](10_agentic_coding/10.3_tools.md)
@@ -84,7 +84,7 @@
   * [本章小结](10_agentic_coding/summary.md)
 ## 第四部分：未来展望
 
-* [第十一章：安全、伦理与未来](11_future/README.md)
+* [第十一章 安全、伦理与未来](11_future/README.md)
   * [11.1 安全边界：提示词注入与防御策略](11_future/11.1_security.md)
   * [11.2 价值对齐与风险控制](11_future/11.2_alignment.md)
   * [11.3 智能体的法律与伦理边界](11_future/11.3_ethics.md)
@@ -93,7 +93,7 @@
 
 ## 第五部分：附录
 
-* [第十二章：附录](12_appendix/README.md)
+* [第十二章 附录](12_appendix/README.md)
   * [12.1 术语表](12_appendix/12.1_glossary.md)
   * [12.2 推荐论文与阅读清单](12_appendix/12.2_reading_list.md)
   * [12.3 示例代码仓库](12_appendix/12.3_code_examples.md)

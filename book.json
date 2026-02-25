@@ -1,0 +1,30 @@
+{
+    "title": "智能体 AI 权威指南",
+    "description": "智能体 AI 权威指南 - 从底层原理到架构设计，从主流框架到工程实践",
+    "author": "yeasy",
+    "language": "zh-hans",
+    "plugins": [
+        "-highlight",
+        "prism",
+        "mermaid-gb3",
+        "chapter-fold",
+        "back-to-top-button",
+        "code",
+        "splitter",
+        "page-toc-button"
+    ],
+    "pluginsConfig": {
+        "prism": {
+            "css": [
+                "prismjs/themes/prism-tomorrow.css"
+            ]
+        },
+        "mermaid-gb3": {
+            "theme": "default"
+        },
+        "page-toc-button": {
+            "maxTocDepth": 3,
+            "minTocSize": 2
+        }
+    }
+}

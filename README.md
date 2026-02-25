@@ -1,6 +1,14 @@
+<div align="center">
+
 # 智能体 AI 权威指南
 
-![智能体 AI 权威指南](_images/cover.jpg)
+[![License: CC BY-NC-SA 4.0](https://img.shields.io/badge/License-CC%20BY--NC--SA%204.0-lightgrey.svg)](https://creativecommons.org/licenses/by-nc-sa/4.0/)
+[![GitHub stars](https://img.shields.io/github/stars/yeasy/agentic_ai_guide?style=social)](https://github.com/yeasy/agentic_ai_guide)
+[![Online Reading](https://img.shields.io/badge/在线阅读-GitBook-brightgreen)](https://yeasy.gitbook.io/agentic_ai_guide)
+
+<img src="_images/cover.jpg" width="300" alt="Agentic AI Guide Cover">
+
+</div>
 
 人工智能正在经历一场范式革命。当对话式大模型广泛普及时，世界惊叹于它们的涌现能力；而今天，我们正站在一个更具历史意义的转折点——从“能对话的 AI”迈向“能行动的 AI”。智能体 AI（Agentic AI）的崛起，标志着人工智能从被动响应走向主动规划、从单轮交互走向持续协作、从辅助工具走向自主伙伴。这不仅是技术演进，更是人机关系的根本重塑。
 
@@ -35,6 +43,41 @@
 > **前置知识**：本书假设读者对 AI 和大语言模型有基本了解。如果你是 AI 领域的新手，建议先阅读 [《AI 入门指南》](https://github.com/yeasy/ai_beginner_guide) 建立基础概念。
 
 开启智能体未来探索之旅！
+
+## 快速开始
+
+### 在线阅读
+
+👉 **推荐**：[GitBook 在线版](https://yeasy.gitbook.io/agentic_ai_guide/)
+
+### 本地阅读
+
+使用 [HonKit](https://github.com/honkit/honkit) 构建本地阅读环境：
+
+```bash
+npm install        # 安装依赖
+npx honkit serve   # 启动本地服务
+```
+
+启动后访问 http://localhost:4000 即可阅读。
+
+---
+
+## 参与贡献
+
+欢迎贡献！您可以通过以下方式参与：
+
+- 🐛 [提交 Issue](https://github.com/yeasy/agentic_ai_guide/issues) — 报告错误或提出建议
+- 📝 [提交 PR](https://github.com/yeasy/agentic_ai_guide/pulls) — 改进内容或修复 typo
+- ⭐ Star 本项目 — 帮助更多人发现这本书
+
+---
+
+## 许可证
+
+本书采用 [CC BY-NC-SA 4.0](https://creativecommons.org/licenses/by-nc-sa/4.0/) 许可证。
+
+您可以自由分享和演绎，但需署名、非商业使用、相同方式共享。
 
 ---
 
