@@ -24,7 +24,6 @@
 
 ## 核心概念预览
 
-
 ```mermaid
 block-beta
     columns 1

@@ -93,6 +93,3 @@ npx honkit serve   # 启动本地服务
 本书采用 [CC BY-NC-SA 4.0](https://creativecommons.org/licenses/by-nc-sa/4.0/) 许可证。
 
 您可以自由分享和演绎，但需署名、非商业使用、相同方式共享。
-
-
-

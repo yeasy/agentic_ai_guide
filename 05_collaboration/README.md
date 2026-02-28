@@ -20,7 +20,6 @@
 
 ## 核心概念预览
 
-
 ```mermaid
 graph TD
     %% Agentic Design System
