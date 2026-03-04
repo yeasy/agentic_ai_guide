@@ -28,8 +28,8 @@ graph TD
     classDef memory fill:#fff0f6,stroke:#eb2f96,stroke-width:2px;
 
     subgraph MAS [多智能体协作系统]
-        Manager[经理智能体 Manager] -->|协调| W1[Worker1]
-        Manager -->|分派任务| Memory[Shared Memory]
+        Supervisor[监管智能体 Supervisor] -->|协调| W1[Worker1]
+        Supervisor -->|分派任务| Memory[Shared Memory]
         
         W1 --> Memory
         W2[Worker2] -->|交接| W3[Worker3]
@@ -38,7 +38,7 @@ graph TD
         Memory <--> W3
     end
     
-    class Manager agent;
+    class Supervisor agent;
     class W1,W2,W3 tool;
     class Memory memory;
 ```
