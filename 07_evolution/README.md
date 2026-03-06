@@ -46,4 +46,4 @@ graph TD
 
 ---
 
-**下一节 **: [7.1 从反馈中学习：RLHF 与 RLAIF](7.1_rl.md)
+**下一节**: [7.1 从反馈中学习：RLHF 与 RLAIF](7.1_rl.md)
