@@ -75,6 +75,7 @@ npx honkit serve   # 启动本地服务
 | [《Claude 技术指南》](https://github.com/yeasy/claude_guide) | 掌握 Claude 工具使用、MCP 协议与 Agentic Coding |
 | [《大模型安全权威指南》](https://github.com/yeasy/ai_security_guide) | 智能体系统的安全设计与攻防实践 |
 | [《OpenClaw 从入门到精通》](https://github.com/yeasy/openclaw_guide) | 开源自驱型智能体框架的落地实战与原理剖析 |
+| [《大模型原理与架构》](https://github.com/yeasy/llm_internals) | 深入理解大语言模型底层逻辑与架构 |
 
 ---
 
