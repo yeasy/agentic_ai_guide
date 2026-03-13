@@ -15,6 +15,7 @@ Thumbs.db
 *.swo
 
 # Python/Agent artifacts
+/*.py
 __pycache__/
 *.pyc
 .env
