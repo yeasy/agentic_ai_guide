@@ -20,7 +20,7 @@
             ]
         },
         "mermaid-gb3": {
-            "theme": "default"
+            "theme": "forest"
         },
         "page-toc-button": {
             "maxTocDepth": 3,
