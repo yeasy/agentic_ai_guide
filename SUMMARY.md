@@ -35,6 +35,7 @@
   * [4.6 多模态能力](04_tools/4.6_multimodal.md)
   * [4.7 智能体交互体验：人机交互接口](04_tools/4.7_agentic_ux.md)
   * [本章小结](04_tools/summary.md)
+
 ## 第二部分：群体智能与进化
 
 * [第五章 多智能体协作模式](05_collaboration/README.md)
@@ -57,6 +58,7 @@
   * [7.4 持续学习与知识更新](07_evolution/7.4_continuous_learning.md)
   * [7.5 推理能力的提升：从快速响应到深度思考](07_evolution/7.5_reasoning.md)
   * [本章小结](07_evolution/summary.md)
+
 ## 第三部分：工程实践与落地
 
 * [第八章 开发框架全景](08_frameworks/README.md)
@@ -84,6 +86,7 @@
   * [10.4 开发方法论](10_agentic_coding/10.4_workflow.md)
   * [10.5 工程化实践](10_agentic_coding/10.5_best_practices.md)
   * [本章小结](10_agentic_coding/summary.md)
+
 ## 第四部分：未来展望
 
 * [第十一章 安全、伦理与未来](11_future/README.md)
