@@ -4,6 +4,7 @@
 
 [![License: CC BY-NC-SA 4.0](https://img.shields.io/badge/License-CC%20BY--NC--SA%204.0-lightgrey.svg)](https://creativecommons.org/licenses/by-nc-sa/4.0/)
 [![GitHub stars](https://img.shields.io/github/stars/yeasy/agentic_ai_guide?style=social)](https://github.com/yeasy/agentic_ai_guide)
+[![Release](https://img.shields.io/github/release/yeasy/agentic_ai_guide.svg)](https://github.com/yeasy/agentic_ai_guide/releases)
 [![Online Reading](https://img.shields.io/badge/在线阅读-GitBook-brightgreen)](https://yeasy.gitbook.io/agentic_ai_guide)
 [![PDF](https://img.shields.io/badge/PDF-下载-orange)](https://github.com/yeasy/agentic_ai_guide/releases/latest/download/agentic_ai_guide.pdf)
 
@@ -51,13 +52,17 @@
 
 👉 **推荐**：[GitBook 在线版](https://yeasy.gitbook.io/agentic_ai_guide/)
 
+## 下载离线版本
+
+本书提供 PDF 版本供离线阅读，可前往 [GitHub Releases](https://github.com/yeasy/agentic_ai_guide/releases/latest) 页面下载最新版本。
+
 ### 本地阅读
 
 先安装 [mdPress](https://github.com/yeasy/mdpress)：
 
 ```bash
 brew tap yeasy/tap && brew install mdpress
-npm run serve
+mdpress serve
 ```
 
 启动后访问 [本地阅读地址](http://localhost:4000) 即可阅读。
