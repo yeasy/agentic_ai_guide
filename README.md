@@ -41,7 +41,7 @@
 * **关注 AI 产品下一步演进方向的产品人**：希望理解智能体能力边界，为产品规划提供技术视角。
 * **对前沿 AI 技术保持好奇的研究者与大学生**：期望系统性理解智能体架构原理，而非碎片化的教程。
 
-> **前置知识**：本书假设读者对 AI 和大语言模型有基本了解。如果你是 AI 领域的新手，建议先阅读 [《零基础学 AI》](https://github.com/yeasy/ai_beginner_guide) 建立基础概念。如果你希望先掌握提示词工程，推荐阅读 [《大模型提示词工程指南》](https://github.com/yeasy/prompt_engineering_guide)。
+> **前置知识**：本书假设读者对 AI 和大语言模型有基本了解。如果你是 AI 领域的新手，建议先阅读 [《零基础学 AI》](https://yeasy.gitbook.io/ai_beginner_guide) 建立基础概念。如果你希望先掌握提示词工程，推荐阅读 [《大模型提示词工程指南》](https://yeasy.gitbook.io/prompt_engineering_guide)。
 
 开启智能体未来探索之旅！
 
@@ -76,13 +76,13 @@ mdpress serve
 
 | 书名 | 与本书的关系 |
 |------|------------|
-| [《零基础学 AI》](https://github.com/yeasy/ai_beginner_guide) | 前置入门读物，帮助建立 AI 基础概念 |
-| [《大模型提示词工程指南》](https://github.com/yeasy/prompt_engineering_guide) | 智能体提示词设计的理论基础 |
-| [《大模型上下文工程权威指南》](https://github.com/yeasy/context_engineering_guide) | 深入理解智能体的上下文管理与记忆架构 |
-| [《Claude 技术指南》](https://github.com/yeasy/claude_guide) | 掌握 Claude 工具使用、MCP 协议与 Agentic Coding |
-| [《大模型安全权威指南》](https://github.com/yeasy/ai_security_guide) | 智能体系统的安全设计与攻防实践 |
-| [《OpenClaw 从入门到精通》](https://github.com/yeasy/openclaw_guide) | 开源自驱型智能体框架的落地实战与原理剖析 |
-| [《大模型原理与架构》](https://github.com/yeasy/llm_internals) | 深入理解大语言模型底层逻辑与架构 |
+| [《零基础学 AI》](https://yeasy.gitbook.io/ai_beginner_guide) | 前置入门读物，帮助建立 AI 基础概念 |
+| [《大模型提示词工程指南》](https://yeasy.gitbook.io/prompt_engineering_guide) | 智能体提示词设计的理论基础 |
+| [《大模型上下文工程权威指南》](https://yeasy.gitbook.io/context_engineering_guide) | 深入理解智能体的上下文管理与记忆架构 |
+| [《Claude 技术指南》](https://yeasy.gitbook.io/claude_guide) | 掌握 Claude 工具使用、MCP 协议与 Agentic Coding |
+| [《大模型安全权威指南》](https://yeasy.gitbook.io/ai_security_guide) | 智能体系统的安全设计与攻防实践 |
+| [《OpenClaw 从入门到精通》](https://yeasy.gitbook.io/openclaw_guide) | 开源自驱型智能体框架的落地实战与原理剖析 |
+| [《大模型原理与架构》](https://yeasy.gitbook.io/llm_internals) | 深入理解大语言模型底层逻辑与架构 |
 
 ---
 
