@@ -79,6 +79,7 @@
   * [9.6 故障模式与韧性设计](09_agentops/9.6_failures.md)
   * [9.7 架构陷阱与反模式](09_agentops/9.7_pitfalls_antipatterns.md)
   * [9.8 从实验到生产：决策路线图与检查清单](09_agentops/9.8_experiment_to_production.md)
+  * [9.9 智能体自治度量化：从实验数据到生产标尺](09_agentops/9.9_autonomy_metrics.md)
   * [本章小结](09_agentops/summary.md)
 * [第十章 智能体编程实践](10_agentic_coding/README.md)
   * [10.1 编程范式转移](10_agentic_coding/10.1_paradigm.md)
