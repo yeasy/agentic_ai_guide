@@ -1,0 +1,62 @@
+<svg width="1200" height="760" viewBox="0 0 1200 760" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <title>隔离成熟度阶梯图</title>
+  <defs>
+    <linearGradient id="bg" x1="40" y1="40" x2="1160" y2="720" gradientUnits="userSpaceOnUse">
+      <stop stop-color="#F8FAFC"/>
+      <stop offset="1" stop-color="#FFF7ED"/>
+    </linearGradient>
+    <linearGradient id="arrow" x1="168" y1="650" x2="1038" y2="112" gradientUnits="userSpaceOnUse">
+      <stop stop-color="#F97316"/>
+      <stop offset="1" stop-color="#16A34A"/>
+    </linearGradient>
+    <filter id="shadow" x="0" y="0" width="1200" height="760" filterUnits="userSpaceOnUse" color-interpolation-filters="sRGB">
+      <feDropShadow dx="0" dy="10" stdDeviation="18" flood-color="#C7B59C" flood-opacity="0.25"/>
+    </filter>
+  </defs>
+
+  <rect x="24" y="24" width="1152" height="712" rx="32" fill="url(#bg)"/>
+  <text x="74" y="88" fill="#0F172A" font-size="30" font-weight="700" font-family="Segoe UI, Microsoft YaHei, sans-serif">架构隔离成熟度阶梯</text>
+  <text x="74" y="124" fill="#334155" font-size="18" font-family="Segoe UI, Microsoft YaHei, sans-serif">越往上，越能把“模型被注入”与“真实世界受损”解耦；代价是更复杂的代理、沙箱和运维体系。</text>
+
+  <g filter="url(#shadow)">
+    <path d="M150 620H360V530H530V440H700V350H870V260H1040V620H150Z" fill="#FFFFFF"/>
+  </g>
+
+  <rect x="150" y="530" width="210" height="90" fill="#FEE2E2"/>
+  <text x="176" y="568" fill="#991B1B" font-size="24" font-weight="700" font-family="Segoe UI, Microsoft YaHei, sans-serif">1. 零边界</text>
+  <text x="176" y="596" fill="#7F1D1D" font-size="16" font-family="Segoe UI, Microsoft YaHei, sans-serif">Agent、代码、文件系统、</text>
+  <text x="176" y="618" fill="#7F1D1D" font-size="16" font-family="Segoe UI, Microsoft YaHei, sans-serif">密钥全部共享访问</text>
+
+  <rect x="360" y="440" width="170" height="180" fill="#FED7AA"/>
+  <text x="384" y="478" fill="#9A3412" font-size="24" font-weight="700" font-family="Segoe UI, Microsoft YaHei, sans-serif">2. 密钥代理</text>
+  <text x="384" y="506" fill="#9A3412" font-size="16" font-family="Segoe UI, Microsoft YaHei, sans-serif">凭证不直达 Agent</text>
+  <text x="384" y="528" fill="#9A3412" font-size="16" font-family="Segoe UI, Microsoft YaHei, sans-serif">但执行域仍共享</text>
+
+  <rect x="530" y="350" width="170" height="270" fill="#FDE68A"/>
+  <text x="556" y="388" fill="#92400E" font-size="24" font-weight="700" font-family="Segoe UI, Microsoft YaHei, sans-serif">3. 共享沙箱</text>
+  <text x="556" y="416" fill="#92400E" font-size="16" font-family="Segoe UI, Microsoft YaHei, sans-serif">对宿主隔离</text>
+  <text x="556" y="438" fill="#92400E" font-size="16" font-family="Segoe UI, Microsoft YaHei, sans-serif">但 Agent 与生成代码</text>
+  <text x="556" y="460" fill="#92400E" font-size="16" font-family="Segoe UI, Microsoft YaHei, sans-serif">仍共享沙箱权限</text>
+
+  <rect x="700" y="260" width="170" height="360" fill="#DCFCE7"/>
+  <text x="726" y="298" fill="#166534" font-size="24" font-weight="700" font-family="Segoe UI, Microsoft YaHei, sans-serif">4. 分离计算</text>
+  <text x="726" y="326" fill="#166534" font-size="16" font-family="Segoe UI, Microsoft YaHei, sans-serif">Harness 与生成代码</text>
+  <text x="726" y="348" fill="#166534" font-size="16" font-family="Segoe UI, Microsoft YaHei, sans-serif">运行在不同容器/虚机</text>
+
+  <rect x="870" y="170" width="170" height="450" fill="#BFDBFE"/>
+  <text x="892" y="208" fill="#1D4ED8" font-size="24" font-weight="700" font-family="Segoe UI, Microsoft YaHei, sans-serif">5. 沙箱 + 注入</text>
+  <text x="892" y="236" fill="#1E3A8A" font-size="16" font-family="Segoe UI, Microsoft YaHei, sans-serif">分离计算 + 密钥代理</text>
+  <text x="892" y="258" fill="#1E3A8A" font-size="16" font-family="Segoe UI, Microsoft YaHei, sans-serif">生成代码无凭证访问</text>
+  <text x="892" y="280" fill="#1E3A8A" font-size="16" font-family="Segoe UI, Microsoft YaHei, sans-serif">生产级推荐方案</text>
+
+  <path d="M180 652C338 624 490 548 634 438C760 342 888 232 1038 112" stroke="url(#arrow)" stroke-width="8" stroke-linecap="round"/>
+  <path d="M1006 112H1038V144" stroke="#16A34A" stroke-width="8" stroke-linecap="round" stroke-linejoin="round"/>
+
+  <text x="140" y="694" fill="#C2410C" font-size="18" font-family="Segoe UI, Microsoft YaHei, sans-serif">风险高 / 成本低</text>
+  <text x="930" y="114" fill="#166534" font-size="18" font-family="Segoe UI, Microsoft YaHei, sans-serif">安全高 / 治理强</text>
+
+  <rect x="74" y="170" width="260" height="96" rx="24" fill="#0F172A"/>
+  <text x="102" y="210" fill="#F8FAFC" font-size="20" font-weight="700" font-family="Segoe UI, Microsoft YaHei, sans-serif">决策提示</text>
+  <text x="102" y="240" fill="#CBD5E1" font-size="16" font-family="Segoe UI, Microsoft YaHei, sans-serif">原型阶段可停留在 2-3 级；</text>
+  <text x="102" y="264" fill="#CBD5E1" font-size="16" font-family="Segoe UI, Microsoft YaHei, sans-serif">生产落地应把 5 级作为目标架构。</text>
+</svg>

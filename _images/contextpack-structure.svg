@@ -1,0 +1,73 @@
+<svg width="1200" height="760" viewBox="0 0 1200 760" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <title>ContextPack 结构图</title>
+  <defs>
+    <linearGradient id="bg" x1="40" y1="40" x2="1160" y2="720" gradientUnits="userSpaceOnUse">
+      <stop stop-color="#F8FBFF"/>
+      <stop offset="1" stop-color="#F7F5FF"/>
+    </linearGradient>
+    <filter id="shadow" x="0" y="0" width="1200" height="760" filterUnits="userSpaceOnUse" color-interpolation-filters="sRGB">
+      <feDropShadow dx="0" dy="10" stdDeviation="18" flood-color="#B7C4D3" flood-opacity="0.24"/>
+    </filter>
+  </defs>
+
+  <rect x="24" y="24" width="1152" height="712" rx="32" fill="url(#bg)"/>
+
+  <text x="74" y="88" fill="#0F172A" font-size="30" font-weight="700" font-family="Segoe UI, Microsoft YaHei, sans-serif">ContextPack：统一的上下文数据包</text>
+  <text x="74" y="124" fill="#334155" font-size="18" font-family="Segoe UI, Microsoft YaHei, sans-serif">把身份、工具、记忆与证据组织成强类型结构，使每次上下文装配都能被追踪、复放和审计。</text>
+
+  <g filter="url(#shadow)">
+    <rect x="520" y="170" width="600" height="500" rx="30" fill="#FFFFFF"/>
+    <rect x="552" y="206" width="536" height="72" rx="18" fill="#E0F2FE"/>
+    <text x="578" y="246" fill="#0C4A6E" font-size="24" font-weight="700" font-family="Segoe UI, Microsoft YaHei, sans-serif">ContextPack Header</text>
+    <text x="578" y="274" fill="#075985" font-size="16" font-family="Segoe UI, Microsoft YaHei, sans-serif">trace_id · span_id · 装配时间 · 版本号</text>
+
+    <rect x="552" y="306" width="250" height="126" rx="20" fill="#EFF6FF"/>
+    <text x="576" y="342" fill="#1D4ED8" font-size="22" font-weight="700" font-family="Segoe UI, Microsoft YaHei, sans-serif">system</text>
+    <text x="576" y="372" fill="#1E3A8A" font-size="16" font-family="Segoe UI, Microsoft YaHei, sans-serif">身份与规则提示词</text>
+    <text x="576" y="400" fill="#1E3A8A" font-size="16" font-family="Segoe UI, Microsoft YaHei, sans-serif">目标边界与执行约束</text>
+
+    <rect x="838" y="306" width="250" height="126" rx="20" fill="#ECFDF5"/>
+    <text x="862" y="342" fill="#047857" font-size="22" font-weight="700" font-family="Segoe UI, Microsoft YaHei, sans-serif">tools</text>
+    <text x="862" y="372" fill="#065F46" font-size="16" font-family="Segoe UI, Microsoft YaHei, sans-serif">当前可用工具 Schema</text>
+    <text x="862" y="400" fill="#065F46" font-size="16" font-family="Segoe UI, Microsoft YaHei, sans-serif">参数、权限、可见域</text>
+
+    <rect x="552" y="462" width="250" height="176" rx="20" fill="#FFF7ED"/>
+    <text x="576" y="498" fill="#C2410C" font-size="22" font-weight="700" font-family="Segoe UI, Microsoft YaHei, sans-serif">memory</text>
+    <text x="576" y="528" fill="#9A3412" font-size="16" font-family="Segoe UI, Microsoft YaHei, sans-serif">短期历史、长期偏好</text>
+    <text x="576" y="556" fill="#9A3412" font-size="16" font-family="Segoe UI, Microsoft YaHei, sans-serif">摘要笔记、任务快照</text>
+    <text x="576" y="584" fill="#9A3412" font-size="16" font-family="Segoe UI, Microsoft YaHei, sans-serif">恢复执行所需最小集合</text>
+
+    <rect x="838" y="462" width="250" height="176" rx="20" fill="#FAF5FF"/>
+    <text x="862" y="498" fill="#7E22CE" font-size="22" font-weight="700" font-family="Segoe UI, Microsoft YaHei, sans-serif">evidence</text>
+    <text x="862" y="528" fill="#6B21A8" font-size="16" font-family="Segoe UI, Microsoft YaHei, sans-serif">检索到的事实片段</text>
+    <text x="862" y="556" fill="#6B21A8" font-size="16" font-family="Segoe UI, Microsoft YaHei, sans-serif">source_id、可信度、摘要</text>
+    <text x="862" y="584" fill="#6B21A8" font-size="16" font-family="Segoe UI, Microsoft YaHei, sans-serif">为回答与审计提供证据链</text>
+  </g>
+
+  <g filter="url(#shadow)">
+    <rect x="72" y="184" width="360" height="328" rx="28" fill="#FFFFFF"/>
+    <text x="104" y="230" fill="#0F172A" font-size="24" font-weight="700" font-family="Segoe UI, Microsoft YaHei, sans-serif">ContextManager 装配流程</text>
+
+    <rect x="104" y="266" width="296" height="48" rx="14" fill="#DBEAFE"/>
+    <text x="126" y="296" fill="#1D4ED8" font-size="17" font-family="Segoe UI, Microsoft YaHei, sans-serif">1. 加载持久化偏好与任务快照</text>
+
+    <rect x="104" y="330" width="296" height="48" rx="14" fill="#D1FAE5"/>
+    <text x="126" y="360" fill="#047857" font-size="17" font-family="Segoe UI, Microsoft YaHei, sans-serif">2. 检索并精排相关证据</text>
+
+    <rect x="104" y="394" width="296" height="48" rx="14" fill="#FFEDD5"/>
+    <text x="126" y="424" fill="#C2410C" font-size="17" font-family="Segoe UI, Microsoft YaHei, sans-serif">3. 压缩历史，保留关键记忆</text>
+
+    <rect x="104" y="458" width="296" height="48" rx="14" fill="#F3E8FF"/>
+    <text x="126" y="488" fill="#7E22CE" font-size="17" font-family="Segoe UI, Microsoft YaHei, sans-serif">4. 过滤工具与上下文作用域</text>
+  </g>
+
+  <path d="M432 348H492" stroke="#64748B" stroke-width="4" stroke-linecap="round"/>
+  <path d="M478 334L492 348L478 362" stroke="#64748B" stroke-width="4" stroke-linecap="round" stroke-linejoin="round"/>
+
+  <g filter="url(#shadow)">
+    <rect x="72" y="548" width="360" height="122" rx="28" fill="#0F172A"/>
+    <text x="104" y="594" fill="#F8FAFC" font-size="24" font-weight="700" font-family="Segoe UI, Microsoft YaHei, sans-serif">输出给当前推理步</text>
+    <text x="104" y="626" fill="#CBD5E1" font-size="17" font-family="Segoe UI, Microsoft YaHei, sans-serif">LLM 看到的是经预算控制后的统一视图，</text>
+    <text x="104" y="652" fill="#CBD5E1" font-size="17" font-family="Segoe UI, Microsoft YaHei, sans-serif">而不是散落的日志、文档和工具列表。</text>
+  </g>
+</svg>
