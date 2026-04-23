@@ -1,0 +1,106 @@
+<svg width="1200" height="720" viewBox="0 0 1200 720" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <title>智能体工作流模式总览</title>
+  <defs>
+    <linearGradient id="bg" x1="80" y1="60" x2="1120" y2="660" gradientUnits="userSpaceOnUse">
+      <stop stop-color="#F8FBFF"/>
+      <stop offset="1" stop-color="#F5F7FA"/>
+    </linearGradient>
+    <linearGradient id="hero" x1="80" y1="80" x2="1120" y2="180" gradientUnits="userSpaceOnUse">
+      <stop stop-color="#DCEEFF"/>
+      <stop offset="1" stop-color="#FFF5E6"/>
+    </linearGradient>
+    <filter id="shadow" x="0" y="0" width="1200" height="720" filterUnits="userSpaceOnUse" color-interpolation-filters="sRGB">
+      <feDropShadow dx="0" dy="8" stdDeviation="14" flood-color="#B8C7D9" flood-opacity="0.22"/>
+    </filter>
+  </defs>
+
+  <rect x="24" y="24" width="1152" height="672" rx="32" fill="url(#bg)"/>
+  <rect x="80" y="72" width="1040" height="108" rx="28" fill="url(#hero)"/>
+  <text x="110" y="118" fill="#0F172A" font-size="30" font-weight="700" font-family="Segoe UI, Microsoft YaHei, sans-serif">智能体工作流模式总览</text>
+  <text x="110" y="154" fill="#334155" font-size="18" font-family="Segoe UI, Microsoft YaHei, sans-serif">从结构化执行到动态探索，再到反思优化与团队协作，工作流模式决定了智能体如何把目标转化为可控的行动路径。</text>
+
+  <g filter="url(#shadow)">
+    <rect x="80" y="228" width="235" height="338" rx="26" fill="#FFFFFF"/>
+    <rect x="80" y="228" width="235" height="16" rx="8" fill="#2F7EF7"/>
+    <text x="106" y="278" fill="#0F172A" font-size="24" font-weight="700" font-family="Segoe UI, Microsoft YaHei, sans-serif">规划-执行</text>
+    <text x="106" y="314" fill="#334155" font-size="17" font-family="Segoe UI, Microsoft YaHei, sans-serif">先拆解，再按步骤推进。</text>
+    <rect x="106" y="344" width="182" height="44" rx="12" fill="#EAF3FF"/>
+    <text x="125" y="372" fill="#1D4ED8" font-size="17" font-family="Segoe UI, Microsoft YaHei, sans-serif">1. 生成计划</text>
+    <rect x="106" y="400" width="182" height="44" rx="12" fill="#EAF3FF"/>
+    <text x="125" y="428" fill="#1D4ED8" font-size="17" font-family="Segoe UI, Microsoft YaHei, sans-serif">2. 顺序执行</text>
+    <rect x="106" y="456" width="182" height="44" rx="12" fill="#EAF3FF"/>
+    <text x="125" y="484" fill="#1D4ED8" font-size="17" font-family="Segoe UI, Microsoft YaHei, sans-serif">3. 检查完成</text>
+    <rect x="106" y="520" width="100" height="28" rx="14" fill="#DBEAFE"/>
+    <text x="123" y="539" fill="#1E40AF" font-size="14" font-family="Segoe UI, Microsoft YaHei, sans-serif">结构化任务</text>
+    <rect x="214" y="520" width="78" height="28" rx="14" fill="#DBEAFE"/>
+    <text x="231" y="539" fill="#1E40AF" font-size="14" font-family="Segoe UI, Microsoft YaHei, sans-serif">低波动</text>
+  </g>
+
+  <g filter="url(#shadow)">
+    <rect x="335" y="228" width="235" height="338" rx="26" fill="#FFFFFF"/>
+    <rect x="335" y="228" width="235" height="16" rx="8" fill="#14B8A6"/>
+    <text x="361" y="278" fill="#0F172A" font-size="24" font-weight="700" font-family="Segoe UI, Microsoft YaHei, sans-serif">ReAct</text>
+    <text x="361" y="314" fill="#334155" font-size="17" font-family="Segoe UI, Microsoft YaHei, sans-serif">在思考、行动、观察间循环。</text>
+    <circle cx="452" cy="390" r="42" fill="#CCFBF1"/>
+    <text x="428" y="397" fill="#0F766E" font-size="17" font-family="Segoe UI, Microsoft YaHei, sans-serif">思考</text>
+    <circle cx="403" cy="468" r="42" fill="#CCFBF1"/>
+    <text x="379" y="475" fill="#0F766E" font-size="17" font-family="Segoe UI, Microsoft YaHei, sans-serif">行动</text>
+    <circle cx="501" cy="468" r="42" fill="#CCFBF1"/>
+    <text x="477" y="475" fill="#0F766E" font-size="17" font-family="Segoe UI, Microsoft YaHei, sans-serif">观察</text>
+    <path d="M432 421C420 431 410 444 406 455" stroke="#0F766E" stroke-width="3" stroke-linecap="round"/>
+    <path d="M472 421C484 431 494 444 498 455" stroke="#0F766E" stroke-width="3" stroke-linecap="round"/>
+    <path d="M442 502C448 516 456 524 468 531" stroke="#0F766E" stroke-width="3" stroke-linecap="round"/>
+    <rect x="361" y="520" width="110" height="28" rx="14" fill="#CCFBF1"/>
+    <text x="382" y="539" fill="#0F766E" font-size="14" font-family="Segoe UI, Microsoft YaHei, sans-serif">探索任务</text>
+    <rect x="479" y="520" width="72" height="28" rx="14" fill="#CCFBF1"/>
+    <text x="497" y="539" fill="#0F766E" font-size="14" font-family="Segoe UI, Microsoft YaHei, sans-serif">动态性</text>
+  </g>
+
+  <g filter="url(#shadow)">
+    <rect x="590" y="228" width="235" height="338" rx="26" fill="#FFFFFF"/>
+    <rect x="590" y="228" width="235" height="16" rx="8" fill="#F59E0B"/>
+    <text x="616" y="278" fill="#0F172A" font-size="24" font-weight="700" font-family="Segoe UI, Microsoft YaHei, sans-serif">反思-改进</text>
+    <text x="616" y="314" fill="#334155" font-size="17" font-family="Segoe UI, Microsoft YaHei, sans-serif">先产出，再围绕质量迭代。</text>
+    <rect x="616" y="346" width="182" height="42" rx="12" fill="#FEF3C7"/>
+    <text x="646" y="372" fill="#B45309" font-size="17" font-family="Segoe UI, Microsoft YaHei, sans-serif">初始方案</text>
+    <path d="M707 390V408" stroke="#D97706" stroke-width="3" stroke-linecap="round"/>
+    <rect x="616" y="418" width="182" height="42" rx="12" fill="#FEF3C7"/>
+    <text x="660" y="444" fill="#B45309" font-size="17" font-family="Segoe UI, Microsoft YaHei, sans-serif">执行与评估</text>
+    <path d="M707 462V480" stroke="#D97706" stroke-width="3" stroke-linecap="round"/>
+    <rect x="616" y="490" width="182" height="42" rx="12" fill="#FEF3C7"/>
+    <text x="649" y="516" fill="#B45309" font-size="17" font-family="Segoe UI, Microsoft YaHei, sans-serif">反思并修订</text>
+    <path d="M798 511C810 511 814 490 814 448C814 405 802 389 790 389" stroke="#D97706" stroke-width="3" stroke-linecap="round"/>
+    <rect x="616" y="538" width="110" height="28" rx="14" fill="#FEF3C7"/>
+    <text x="635" y="557" fill="#B45309" font-size="14" font-family="Segoe UI, Microsoft YaHei, sans-serif">质量敏感</text>
+    <rect x="734" y="538" width="64" height="28" rx="14" fill="#FEF3C7"/>
+    <text x="752" y="557" fill="#B45309" font-size="14" font-family="Segoe UI, Microsoft YaHei, sans-serif">迭代</text>
+  </g>
+
+  <g filter="url(#shadow)">
+    <rect x="845" y="228" width="275" height="338" rx="26" fill="#FFFFFF"/>
+    <rect x="845" y="228" width="275" height="16" rx="8" fill="#8B5CF6"/>
+    <text x="871" y="278" fill="#0F172A" font-size="24" font-weight="700" font-family="Segoe UI, Microsoft YaHei, sans-serif">层级协作</text>
+    <text x="871" y="314" fill="#334155" font-size="17" font-family="Segoe UI, Microsoft YaHei, sans-serif">协调者编排多个专业子智能体。</text>
+    <rect x="918" y="344" width="130" height="42" rx="14" fill="#EDE9FE"/>
+    <text x="943" y="370" fill="#6D28D9" font-size="17" font-family="Segoe UI, Microsoft YaHei, sans-serif">协调者</text>
+    <rect x="865" y="432" width="92" height="40" rx="12" fill="#F5F3FF"/>
+    <text x="892" y="456" fill="#6D28D9" font-size="16" font-family="Segoe UI, Microsoft YaHei, sans-serif">研究</text>
+    <rect x="936" y="496" width="92" height="40" rx="12" fill="#F5F3FF"/>
+    <text x="963" y="520" fill="#6D28D9" font-size="16" font-family="Segoe UI, Microsoft YaHei, sans-serif">写作</text>
+    <rect x="1007" y="432" width="92" height="40" rx="12" fill="#F5F3FF"/>
+    <text x="1034" y="456" fill="#6D28D9" font-size="16" font-family="Segoe UI, Microsoft YaHei, sans-serif">审核</text>
+    <path d="M983 386V408" stroke="#7C3AED" stroke-width="3" stroke-linecap="round"/>
+    <path d="M983 408L911 431" stroke="#7C3AED" stroke-width="3" stroke-linecap="round"/>
+    <path d="M983 408V494" stroke="#7C3AED" stroke-width="3" stroke-linecap="round"/>
+    <path d="M983 408L1053 431" stroke="#7C3AED" stroke-width="3" stroke-linecap="round"/>
+    <path d="M911 472L983 494" stroke="#A78BFA" stroke-width="2.5" stroke-linecap="round" stroke-dasharray="6 6"/>
+    <path d="M1053 472L983 494" stroke="#A78BFA" stroke-width="2.5" stroke-linecap="round" stroke-dasharray="6 6"/>
+    <rect x="875" y="538" width="118" height="28" rx="14" fill="#EDE9FE"/>
+    <text x="896" y="557" fill="#6D28D9" font-size="14" font-family="Segoe UI, Microsoft YaHei, sans-serif">复杂项目</text>
+    <rect x="1001" y="538" width="94" height="28" rx="14" fill="#EDE9FE"/>
+    <text x="1017" y="557" fill="#6D28D9" font-size="14" font-family="Segoe UI, Microsoft YaHei, sans-serif">角色分工</text>
+  </g>
+
+  <rect x="80" y="608" width="1040" height="52" rx="18" fill="#0F172A"/>
+  <text x="108" y="640" fill="#E2E8F0" font-size="18" font-family="Segoe UI, Microsoft YaHei, sans-serif">共同底座：状态管理、工具接入、终止条件、可观测性和人机协作护栏。</text>
+</svg>
