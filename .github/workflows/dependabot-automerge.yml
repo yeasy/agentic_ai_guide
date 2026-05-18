@@ -4,25 +4,45 @@ on: pull_request
 permissions:
   contents: write
   pull-requests: write
+  checks: read
 
 jobs:
   dependabot:
-    runs-on: ubuntu-24.04
-    if: github.event.pull_request.user.login == 'dependabot[bot]' && github.repository == 'yeasy/agentic_ai_guide'
+    runs-on: ubuntu-latest
+    if: github.actor == 'dependabot[bot]'
     steps:
       - name: Dependabot metadata
         id: metadata
-        uses: dependabot/fetch-metadata@21025c705c08248db411dc16f3619e6b5f9ea21a # v2.5.0
+        uses: dependabot/fetch-metadata@25dd0e34f4fe68f24cc83900b1fe3fe149efef98 # v3
         with:
           github-token: "${{ secrets.GITHUB_TOKEN }}"
-      - name: Approve a PR
-        if: steps.metadata.outputs.update-type == 'version-update:semver-patch'
+
+      - name: Confirm required checks are configured
+        if: >
+          steps.metadata.outputs.package-ecosystem == 'github_actions' &&
+          contains(fromJSON('["version-update:semver-patch","version-update:semver-minor"]'), steps.metadata.outputs.update-type)
+        run: |
+          REQUIRED=$(gh api "repos/${GITHUB_REPOSITORY}/branches/${{ github.event.pull_request.base.ref }}/protection/required_status_checks" --jq '((.contexts // []) | length) + ((.checks // []) | length)' 2>/dev/null || echo 0)
+          if [ "$REQUIRED" -eq 0 ]; then
+            echo "No required status checks configured on the base branch; refusing Dependabot auto-merge."
+            exit 1
+          fi
+        env:
+          GH_TOKEN: ${{secrets.GITHUB_TOKEN}}
+
+      - name: Approve low-risk Dependabot PR
+        if: >
+          steps.metadata.outputs.package-ecosystem == 'github_actions' &&
+          contains(fromJSON('["version-update:semver-patch","version-update:semver-minor"]'), steps.metadata.outputs.update-type)
         run: gh pr review --approve "$PR_URL"
         env:
           PR_URL: ${{github.event.pull_request.html_url}}
           GH_TOKEN: ${{secrets.GITHUB_TOKEN}}
-      - name: Enable auto-merge for Dependabot PRs
-        if: steps.metadata.outputs.update-type == 'version-update:semver-patch'
+
+      - name: Enable auto-merge for low-risk Dependabot PRs
+        if: >
+          steps.metadata.outputs.package-ecosystem == 'github_actions' &&
+          contains(fromJSON('["version-update:semver-patch","version-update:semver-minor"]'), steps.metadata.outputs.update-type)
         run: gh pr merge --auto --merge "$PR_URL"
         env:
           PR_URL: ${{github.event.pull_request.html_url}}
