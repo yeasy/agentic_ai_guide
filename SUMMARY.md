@@ -65,7 +65,7 @@
   * [8.1 框架生态概览与选型指南](08_frameworks/8.1_ecosystem.md)
   * [8.2 从链到图：流程编排进化](08_frameworks/8.2_langchain.md)
   * [8.3 数据驱动的 RAG 框架](08_frameworks/8.3_llamaindex.md)
-  * [8.4 多体协作：多智能体框架实战](08_frameworks/8.4_multi_agent.md)
+  * [8.4 多智能体协作：多智能体框架实战](08_frameworks/8.4_multi_agent.md)
   * [8.5 企业级集成：与现有系统整合](08_frameworks/8.5_enterprise.md)
   * [8.6 平台级产品：接口原语与托管运行时](08_frameworks/8.6_platforms.md)
   * [8.7 框架性能基准评测](08_frameworks/8.7_performance.md)
