@@ -105,7 +105,7 @@ mdpress serve
 | [《大模型上下文工程权威指南》](https://yeasy.gitbook.io/context_engineering_guide) | 深入理解智能体的上下文管理与记忆架构 |
 | [《Claude 技术指南》](https://yeasy.gitbook.io/claude_guide) | 掌握 Claude 工具使用、MCP 协议与 Agentic Coding |
 | [《大模型安全权威指南》](https://yeasy.gitbook.io/ai_security_guide) | 智能体系统的安全设计与攻防实践 |
-| [《OpenClaw 从入门到精通》](https://yeasy.gitbook.io/openclaw_guide) | 开源自驱型智能体框架的落地实战与原理剖析 |
+| [《OpenClaw 入门到精通》](https://yeasy.gitbook.io/openclaw_guide) | 开源自驱型智能体框架的落地实战与原理剖析 |
 | [《大模型原理与架构》](https://yeasy.gitbook.io/llm_internals) | 深入理解大语言模型底层逻辑与架构 |
 | [《智能体 Harness 工程指南》](https://yeasy.gitbook.io/harness_engineering_guide) | 本书的工程实现篇——深入智能体 Harness 基础设施的设计与构建 |
 
