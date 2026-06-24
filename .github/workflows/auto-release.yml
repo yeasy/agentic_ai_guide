@@ -47,7 +47,8 @@ jobs:
           else
             tag_name="latest"
           fi
-          safe_tag_name="${tag_name//\//-}"
+          safe_tag_name=$(printf '%s' "$tag_name" | sed 's/[^A-Za-z0-9._-]/-/g')
+          safe_tag_name="${safe_tag_name:-latest}"
           echo "TAG_NAME=${tag_name}" >> "$GITHUB_OUTPUT"
           echo "SAFE_TAG_NAME=${safe_tag_name}" >> "$GITHUB_OUTPUT"
 
