@@ -80,6 +80,7 @@
   * [9.7 架构陷阱与反模式](09_agentops/9.7_pitfalls_antipatterns.md)
   * [9.8 从实验到生产：决策路线图与检查清单](09_agentops/9.8_experiment_to_production.md)
   * [9.9 智能体自主度实证分析与监控](09_agentops/9.9_autonomy_metrics.md)
+  * [9.10 智能体还是自动化：为需求匹配最简形态](09_agentops/9.10_agent_or_automation.md)
   * [本章小结](09_agentops/summary.md)
 * [第十章 智能体编程实践](10_agentic_coding/README.md)
   * [10.1 编程范式转移](10_agentic_coding/10.1_paradigm.md)
