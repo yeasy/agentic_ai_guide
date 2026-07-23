@@ -276,7 +276,7 @@ class WorkflowSafetyTests(unittest.TestCase):
     def test_downloads_and_artifacts_have_integrity_gates(self):
         for name in ("ci.yaml", "preview-pdf.yml", "auto-release.yml"):
             text = self.workflow_text(name)
-            self.assertIn("MDPRESS_SHA256", text, name)
+            self.assertIn("checksums.txt", text, name)
             self.assertIn("PANDOC_SHA256", text, name)
             self.assertIn("sha256sum -c -", text, name)
             self.assertIn("tools/verify_artifacts.py", text, name)
