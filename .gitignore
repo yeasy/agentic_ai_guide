@@ -19,6 +19,7 @@ Thumbs.db
 
 # Python/Agent artifacts
 /*.py
+!/check_emphasis.py
 __pycache__/
 *.pyc
 .env
