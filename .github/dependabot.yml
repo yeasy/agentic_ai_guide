@@ -1,7 +1,7 @@
 version: 2
 updates:
   - package-ecosystem: "npm"
-    directory: "/"
+    directory: "/tools/mermaid"
     schedule:
       interval: "weekly"
     commit-message:
