@@ -1,5 +1,6 @@
 from __future__ import annotations
 
+import re
 import tempfile
 import unittest
 from datetime import date
@@ -94,8 +95,8 @@ class VolatileFactsTests(unittest.TestCase):
     def test_repository_ledger_records_current_official_model_status(self):
         text = LEDGER.read_text(encoding="utf-8")
         required = (
-            "`verified_at`: 2026-07-10",
-            "`expires_at`: 2026-08-09",
+            "`verified_at`: 2026-07-28",
+            "`expires_at`: 2026-08-27",
             "`ttl_days`: 30",
             "status=resolved-conflict",
             "GPT-5.6",
@@ -105,6 +106,7 @@ class VolatileFactsTests(unittest.TestCase):
             "2026-07-01 的恢复公告记录当时先恢复给一组美国机构",
             "Claude Sonnet 5",
             "`claude-sonnet-5`",
+            "`claude-opus-5`",
             "Gemini 3.5 Flash",
             "https://www.anthropic.com/news/redeploying-fable-5",
             "https://www.anthropic.com/news/claude-sonnet-5",
@@ -113,7 +115,16 @@ class VolatileFactsTests(unittest.TestCase):
         )
         for marker in required:
             self.assertIn(marker, text)
-        self.assertEqual(check_volatile(self, LEDGER, date(2026, 7, 10)), [])
+        # Check the real ledger as of its OWN verified_at, not a hardcoded date.
+        # This line used to pin 2026-07-10, so every honest ledger refresh failed
+        # here with "verified_at is in the future" — a third date pin hiding behind
+        # the two in the marker list above. The synthetic fixtures below keep their
+        # own fixed dates on purpose; those exercise the checker, not the ledger.
+        stamped = re.search(r"`verified_at`:\s*(\d{4})-(\d{2})-(\d{2})", text)
+        self.assertIsNotNone(stamped, "ledger header must carry verified_at")
+        self.assertEqual(
+            check_volatile(self, LEDGER, date(*(int(g) for g in stamped.groups()))), []
+        )
 
     def test_main_checker_enforces_volatile_facts(self):
         source = (ROOT / "check_project_rules.py").read_text(encoding="utf-8")
