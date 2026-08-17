@@ -95,8 +95,8 @@ class VolatileFactsTests(unittest.TestCase):
     def test_repository_ledger_records_current_official_model_status(self):
         text = LEDGER.read_text(encoding="utf-8")
         required = (
-            "`verified_at`: 2026-07-28",
-            "`expires_at`: 2026-08-27",
+            "`verified_at`: 2026-08-16",
+            "`expires_at`: 2026-09-15",
             "`ttl_days`: 30",
             "status=resolved-conflict",
             "GPT-5.6",
