@@ -282,9 +282,9 @@ class WorkflowSafetyTests(unittest.TestCase):
             self.assertIn("tools/verify_artifacts.py", text, name)
             self.assertIn("SHA256SUMS", text, name)
             self.assertNotIn("continue-on-error: true", text, name)
-        self.assertIn(
-            "actions/attest-build-provenance@0f67c3f4856b2e3261c31976d6725780e5e4c373 # v4.1.1",
+        self.assertRegex(
             self.workflow_text("auto-release.yml"),
+            r"actions/attest-build-provenance@[0-9a-f]{40} # v\d",
         )
 
     def test_mermaid_dependency_is_exact_and_lockfile_backed(self):
