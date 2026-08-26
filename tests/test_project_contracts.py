@@ -94,10 +94,17 @@ class VolatileFactsTests(unittest.TestCase):
 
     def test_repository_ledger_records_current_official_model_status(self):
         text = LEDGER.read_text(encoding="utf-8")
+        # Assert the SHAPE of the header rather than the literal dates. Pinning
+        # them here guarantees that every honest re-verification — the one thing
+        # the 30-day TTL exists to force — also breaks this test. The date
+        # arithmetic is enforced by check_volatile_facts() against the ledger's
+        # own verified_at, so it does not need a second copy here.
+        self.assertRegex(
+            text,
+            r"`verified_at`: \d{4}-\d{2}-\d{2} · "
+            r"`expires_at`: \d{4}-\d{2}-\d{2} · `ttl_days`: 30",
+        )
         required = (
-            "`verified_at`: 2026-08-16",
-            "`expires_at`: 2026-09-15",
-            "`ttl_days`: 30",
             "status=resolved-conflict",
             "GPT-5.6",
             "GPT-5.3-Codex",
