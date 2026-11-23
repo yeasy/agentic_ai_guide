@@ -1,136 +1,94 @@
-<div align="center">
-
 # 智能体 AI 权威指南
 
-[![License: CC BY-NC-SA 4.0](https://img.shields.io/badge/License-CC%20BY--NC--SA%204.0-lightgrey.svg)](https://creativecommons.org/licenses/by-nc-sa/4.0/)
-[![GitHub stars](https://img.shields.io/github/stars/yeasy/agentic_ai_guide?style=social)](https://github.com/yeasy/agentic_ai_guide)
-[![Release](https://img.shields.io/github/release/yeasy/agentic_ai_guide.svg)](https://github.com/yeasy/agentic_ai_guide/releases)
-[![Online Reading](https://img.shields.io/badge/在线阅读-GitBook-brightgreen)](https://yeasy.gitbook.io/agentic_ai_guide)
-[![PDF](https://img.shields.io/badge/PDF-下载-orange)](https://github.com/yeasy/agentic_ai_guide/releases/latest)
+从单体设计到多智能体协作，掌握智能体的开发、评估与治理。
 
-<img src="_images/cover.jpg" width="300" alt="Agentic AI Guide Cover">
+**[在 GitBook 阅读第一章 · 智能体范式](https://yeasy.gitbook.io/agentic_ai_guide/di-yi-bu-fen-dan-ti-zhi-neng-jia-gou/01_paradigm)**
 
-</div>
+[全书目录（GitHub）](https://github.com/yeasy/agentic_ai_guide/blob/main/SUMMARY.md) · [正式 PDF（发布页）](https://github.com/yeasy/agentic_ai_guide/releases/latest)
+
+<img src="_images/cover.jpg" width="210" alt="智能体 AI 权威指南封面">
+
+## 关于本书
 
 对话式大模型普及之初，人们看到的是它们的涌现能力；如今，人工智能正从“能对话的 AI”迈向“能行动的 AI”。智能体 AI（Agentic AI）让人工智能从被动响应走向主动规划，从单轮交互走向持续协作，从辅助工具走向自主伙伴，人机关系也随之改变。
 
 《智能体 AI 权威指南》系统讲解智能体技术，内容从底层原理到架构设计，从主流框架到工程实践，构成完整的知识体系。
 
-## 本书目标
+## 从哪里开始
 
-本书帮助研究人员、工程师、技术专家以及 AI 爱好者：
-* **理解核心概念**：深入剖析智能体 AI 的基本原理，包括感知、规划、记忆和行动。
-* **掌握架构模式**：学习 ReAct、规划与执行等主流设计模式，以及多智能体协作架构。
-* **熟悉开发框架与生态**：理解“链式编排”“图式编排”“数据驱动的 RAG 框架”“多智能体编排”等常见路线与选型思路。
-* **落地最佳实践**：提供从设计、开发到评估、安全治理的全链路工程实践指南。
+- **初次接触智能体** · 从[第一章 智能体范式](https://yeasy.gitbook.io/agentic_ai_guide/di-yi-bu-fen-dan-ti-zhi-neng-jia-gou/01_paradigm)开始，了解一个智能体怎样规划任务、调用工具并根据结果继续行动。
+- **动手开发智能体** · 先读 [ReAct](https://yeasy.gitbook.io/agentic_ai_guide/di-yi-bu-fen-dan-ti-zhi-neng-jia-gou/02_reasoning/2.3_react)和[工具使用机制](https://yeasy.gitbook.io/agentic_ai_guide/di-yi-bu-fen-dan-ti-zhi-neng-jia-gou/04_tools/4.2_tool_use)，用熟悉的大模型 API 为一个查询任务接入工具，检查每轮调用和返回结果。
+- **做技术选型与上线评审** · 用[框架选型指南](https://yeasy.gitbook.io/agentic_ai_guide/di-san-bu-fen-gong-cheng-shi-jian-yu-luo-di/08_frameworks/8.1_ecosystem)比较候选架构，再用[生产化检查清单](https://yeasy.gitbook.io/agentic_ai_guide/di-san-bu-fen-gong-cheng-shi-jian-yu-luo-di/09_agentops/9.8_experiment_to_production)检查试点是否达到上线条件。
+- **评估试点投资与治理** · 先读[自主度与监控](https://yeasy.gitbook.io/agentic_ai_guide/di-san-bu-fen-gong-cheng-shi-jian-yu-luo-di/09_agentops/9.9_autonomy_metrics)，确定授权范围和人工接管条件。随后建立成本与收益基线，落实治理责任，检查用户能否撤销操作，再评估扩大试点的风险。
 
-## 你将学到什么
+本书假设读者对 AI 和大语言模型有基本了解。可先读[《零基础学 AI》](https://yeasy.gitbook.io/ai_beginner_guide)补足基础概念，或读[《大模型提示词工程指南》](https://yeasy.gitbook.io/prompt_engineering_guide)练习提示词设计。
 
-本书分为五个部分，构成完整的智能体 AI 知识地图：
-1. **单体智能篇**：了解智能体的诞生原理，掌握其大脑（规划）、记忆与工具使用机制。
-2. **群体智能篇**：探索多智能体协作（Multi-Agent）、通信协议与社会模拟等高阶话题。
-3. **进化学习篇**：深入强化学习（RLHF）、评估体系与智能体自我进化能力。
-4. **工程实践篇**：以典型工程场景为主线，掌握 AgentOps 落地心法与 **Agentic Coding** 编程新范式。
-5. **未来展望篇**：洞察安全伦理边界，展望通向 AGI 的技术路径。
+<details>
 
-## 读者对象
+<summary>高管决策路线</summary>
 
-* **想从 LLM 调用迈向智能体开发的工程师**：已经熟悉大模型 API，但不知如何让模型“动起来”，解决端到端任务。
-* **正在选型或落地智能体框架的技术负责人**：面对多种技术路线与产品形态，需要深入理解各类框架的设计哲学与适用场景。
-* **评估 AI 战略投资的企业高管**：需要理解智能体技术的商业价值、落地路径与风险边界，做出明智的资源配置决策。
-* **关注 AI 产品下一步演进方向的产品人**：希望理解智能体能力边界，为产品规划提供技术视角。
-* **对前沿 AI 技术保持好奇的研究者与大学生**：期望系统地理解智能体架构原理，而非碎片化的教程。
+1. [定义可接受的自主度与升级边界](09_agentops/9.9_autonomy_metrics.md)，确定授权层级、人工接管点和成功指标。
+2. [建立成本、性能与 ROI 基线](09_agentops/9.4_optimization.md)，用真实采样评估单位经济性。
+3. [落实企业治理与运行责任](09_agentops/9.5_enterprise.md)，为权限、审计、合规和事故响应指定负责人。
+4. [设计可理解、可撤销的人机体验](04_tools/4.7_agentic_ux.md)，验证用户能否理解系统行为、撤销操作并安全接管。
+5. [审查对齐与长期外部性](11_future/11.2_alignment.md)，在扩大自治范围前复核目标偏移、滥用与系统性风险。
 
-> **前置知识**：本书假设读者对 AI 和大语言模型有基本了解。如果你是 AI 领域的新手，建议先阅读 [《零基础学 AI》](https://yeasy.gitbook.io/ai_beginner_guide) 建立基础概念。如果你希望先掌握提示词工程，推荐阅读 [《大模型提示词工程指南》](https://yeasy.gitbook.io/prompt_engineering_guide)。
+</details>
 
+<details>
 
-## 学习路线图
+<summary>全书结构与按角色选读</summary>
 
-```mermaid
-graph LR
-    Start[智能体 AI 学习入口] --> Ch1[第1章：范式革命]
+- **单体智能架构（第 1–4 章）** · 了解感知、推理、规划、记忆与工具调用，学习 ReAct、规划与执行等常见模式。
+- **群体智能与进化（第 5–7 章）** · 学习多智能体协作、通信协议、社会模拟，以及从反馈中学习、评估和持续改进智能体的方法。
+- **工程实践与落地（第 8–10 章）** · 比较链式、图式、数据驱动的 RAG 与多智能体编排框架，学习 AgentOps 和智能体编程实践。
+- **未来展望（第 11 章）** · 理解安全、伦理与价值对齐的边界，了解通向通用人工智能的技术路径。
+- **附录（第 12 章）** · 查阅术语、论文、AGENTS.md 规范、案例模板与检查清单。
 
-    Ch1 --> Role1["AI 工程师<br/>第1-4章 → 第8-10章"]
-    Ch1 --> Role2["技术负责人<br/>第1-2章 → 第5-6章 → 第8章"]
-    Ch1 --> Role3["产品经理<br/>第1-2章 → 第5章 → 第11章"]
-    Ch1 --> Role4["研究者<br/>第1-7章 → 第11章"]
+| 读者角色 | 阅读顺序 | 学习重点 |
+| --- | --- | --- |
+| **AI 工程师** | 第 1–4 章 → 第 8–10 章 | 单体智能机制、框架与 AgentOps |
+| **技术负责人** | 第 1–2 章 → 第 5–6 章 → 第 8 章 | 多智能体协作架构和框架选型 |
+| **产品经理** | 第 1–2 章 → 第 5 章 → 第 11 章 | 用能力边界和协作模式判断产品方案 |
+| **研究者与学生** | 第 1–7 章 → 第 11 章 | 智能体架构原理、评估方法与研究方向 |
 
-    Role1 --> End1["掌握智能体开发"]
-    Role2 --> End2["框架选型与落地"]
-    Role3 --> End3["产品规划与边界"]
-    Role4 --> End4["前沿研究与创新"]
-```
+模型可用性、API、协议和基准等易变信息见[快变事实核验表](12_appendix/12.5_volatile_facts.md)。核验表按 30 天有效期复核，若正文与之有差异，请参照表中链接的官方来源和冲突状态。
 
-| 读者角色 | 学习重点 | 核心成果 |
-|---------|---------|---------|
-| **AI 工程师** | 第 1-4 章 → 第 8-10 章 | 掌握智能体核心机制与 AgentOps 工程实践 |
-| **技术负责人** | 第 1-2 章 → 第 5-6 章 → 第 8 章 | 理解多智能体协作架构，完成框架选型与落地 |
-| **产品经理** | 第 1-2 章 → 第 5 章 → 第 11 章 | 理解智能体能力边界，为产品规划提供技术视角 |
-| **研究者** | 第 1-7 章 → 第 11 章 | 系统掌握智能体架构原理与前沿研究方向 |
+</details>
 
-模型可用性、API、协议和基准等高波动内容统一收录在[快变事实核验表](12_appendix/12.5_volatile_facts.md)，并按 30 天有效期复核。正文出现冲突时，以该表引用的最新官方来源和冲突状态为准。
+## 延伸阅读
 
-## 高管决策路线
+<details>
 
-这条五站路线把技术自主性转换为可审计的投资与治理决策；每一站都有明确输入和输出，可由测试验证链接与顺序。
+<summary>相关系列图书</summary>
 
-1. [定义可接受的自主度与升级边界](09_agentops/9.9_autonomy_metrics.md)：确定授权层级、人工接管点和成功指标。
-2. [建立成本、性能与 ROI 基线](09_agentops/9.4_optimization.md)：用真实采样评估单位经济性，而不是用演示效果外推。
-3. [落实企业治理与运行责任](09_agentops/9.5_enterprise.md)：把权限、审计、合规和事故响应绑定到负责人。
-4. [设计可理解、可撤销的人机体验](04_tools/4.7_agentic_ux.md)：验证用户是否看得懂、控得住并能安全接管。
-5. [审查对齐与长期外部性](11_future/11.2_alignment.md)：在扩大自治范围前复核目标偏移、滥用与系统性风险。
+- [《大模型上下文工程权威指南》](https://yeasy.gitbook.io/context_engineering_guide) · 深入理解智能体的上下文管理与记忆架构。
+- [《Claude 技术指南》](https://yeasy.gitbook.io/claude_guide) · 练习 Claude 工具调用、MCP 与智能体编程。
+- [《大模型安全权威指南》](https://yeasy.gitbook.io/ai_security_guide) · 学习智能体系统的安全设计与攻防实践。
+- [《OpenClaw 入门到精通》](https://yeasy.gitbook.io/openclaw_guide) · 以 OpenClaw 为例理解开源智能体的实现与应用。
+- [《大模型原理与架构》](https://yeasy.gitbook.io/llm_internals) · 了解智能体背后大语言模型的原理与架构。
+- [《智能体 Harness 工程指南》](https://yeasy.gitbook.io/harness_engineering_guide) · 深入学习支撑智能体执行、观测与治理的基础设施。
 
-## 快速开始
+</details>
 
-### 在线阅读
+## 反馈与贡献
 
-👉 **推荐**：[GitBook 在线版](https://yeasy.gitbook.io/agentic_ai_guide/)
+欢迎在 [GitHub Issues](https://github.com/yeasy/agentic_ai_guide/issues) 报告勘误或提出建议，也可以[提交 Pull Request](https://github.com/yeasy/agentic_ai_guide/pulls)改进内容，或在 [GitHub 仓库](https://github.com/yeasy/agentic_ai_guide)为本书加星。
 
-## 下载离线版本
+<details>
 
-本书提供 PDF 版本供离线阅读，可前往 [GitHub Releases](https://github.com/yeasy/agentic_ai_guide/releases/latest) 页面下载最新版本。
+<summary>本地阅读与 PDF 预览</summary>
 
-如需获取默认分支自动更新的预览版，可直接下载 [agentic_ai_guide.pdf](https://github.com/yeasy/agentic_ai_guide/releases/download/preview-pdf/agentic_ai_guide.pdf)。该文件会随主线更新覆盖，不代表正式发布版本。
-
-### 本地阅读
-
-先安装 [mdPress](https://github.com/yeasy/mdpress)：
+安装 [mdPress](https://github.com/yeasy/mdpress) 后，在仓库根目录启动本地预览，再打开 `http://localhost:9000`。
 
 ```bash
 brew tap yeasy/tap && brew install mdpress
 mdpress serve
 ```
 
-启动后访问 [本地阅读地址](http://localhost:9000) 即可阅读。
+[默认分支 PDF 预览版](https://github.com/yeasy/agentic_ai_guide/releases/download/preview-pdf/agentic_ai_guide.pdf)随主线更新，正式版本可在发布页下载。
 
----
-
-## 推荐阅读
-
-本书是 AI 技术丛书的一部分。以下书籍与本书形成互补，建议根据需要组合阅读：
-
-| 书名 | 与本书的关系 |
-|------|------------|
-| [《零基础学 AI》](https://yeasy.gitbook.io/ai_beginner_guide) | 前置入门读物，帮助建立 AI 基础概念 |
-| [《大模型提示词工程指南》](https://yeasy.gitbook.io/prompt_engineering_guide) | 智能体提示词设计的理论基础 |
-| [《大模型上下文工程权威指南》](https://yeasy.gitbook.io/context_engineering_guide) | 深入理解智能体的上下文管理与记忆架构 |
-| [《Claude 技术指南》](https://yeasy.gitbook.io/claude_guide) | 掌握 Claude 工具使用、MCP 协议与 Agentic Coding |
-| [《大模型安全权威指南》](https://yeasy.gitbook.io/ai_security_guide) | 智能体系统的安全设计与攻防实践 |
-| [《OpenClaw 入门到精通》](https://yeasy.gitbook.io/openclaw_guide) | 开源自驱型智能体框架的落地实战与原理剖析 |
-| [《大模型原理与架构》](https://yeasy.gitbook.io/llm_internals) | 深入理解大语言模型底层逻辑与架构 |
-| [《智能体 Harness 工程指南》](https://yeasy.gitbook.io/harness_engineering_guide) | 本书的工程实现篇，讲解智能体 Harness 基础设施的设计与构建 |
-
----
-
-## 参与贡献
-
-欢迎贡献！您可以通过以下方式参与：
-
-- 🐛 [提交 Issue](https://github.com/yeasy/agentic_ai_guide/issues) — 报告错误或提出建议
-- 📝 [提交 PR](https://github.com/yeasy/agentic_ai_guide/pulls) — 改进内容或修复 typo
-- ⭐ Star 本项目 — 帮助更多人发现这本书
-
----
+</details>
 
 ## 许可证
 

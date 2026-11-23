@@ -148,7 +148,12 @@ class VolatileFactsTests(unittest.TestCase):
 class ExecutiveRouteTests(unittest.TestCase):
     def test_readme_has_a_testable_five_stop_executive_route(self):
         text = (ROOT / "README.md").read_text(encoding="utf-8")
-        self.assertIn("## 高管决策路线", text)
+        disclosure = re.search(
+            r"<details>\n\n<summary>高管决策路线</summary>\n\n(.*?)\n</details>",
+            text,
+            re.DOTALL,
+        )
+        self.assertIsNotNone(disclosure)
         expected = (
             "09_agentops/9.9_autonomy_metrics.md",
             "09_agentops/9.4_optimization.md",
@@ -156,11 +161,8 @@ class ExecutiveRouteTests(unittest.TestCase):
             "04_tools/4.7_agentic_ux.md",
             "11_future/11.2_alignment.md",
         )
-        positions = []
-        for path in expected:
-            self.assertIn(path, text)
-            positions.append(text.index(path))
-        self.assertEqual(positions, sorted(positions))
+        stops = re.findall(r"^(\d+)\. \[[^\]]+\]\(([^)]+)\)", disclosure.group(1), re.MULTILINE)
+        self.assertEqual(stops, [(str(step), path) for step, path in enumerate(expected, 1)])
 
     def test_readme_routes_fast_changing_claims_to_the_ledger(self):
         text = (ROOT / "README.md").read_text(encoding="utf-8")
