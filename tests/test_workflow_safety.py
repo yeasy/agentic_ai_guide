@@ -294,12 +294,22 @@ class WorkflowSafetyTests(unittest.TestCase):
         self.assertTrue(lock_path.is_file(), lock_path)
         package = json.loads(package_path.read_text(encoding="utf-8"))
         lock = json.loads(lock_path.read_text(encoding="utf-8"))
-        pinned = package["dependencies"]["@mermaid-js/mermaid-cli"]
-        self.assertRegex(pinned, r"^\d+\.\d+\.\d+$", "mermaid-cli must be pinned to an exact version")
+        dependency = "@mermaid-js/mermaid-cli"
+        pinned = package["dependencies"][dependency]
+        self.assertIsNotNone(
+            re.fullmatch(r"(?:0|[1-9][0-9]*)\.(?:0|[1-9][0-9]*)\.(?:0|[1-9][0-9]*)", pinned),
+            "mermaid-cli must be pinned to an exact version",
+        )
         self.assertGreaterEqual(lock["lockfileVersion"], 3)
         self.assertEqual(
-            lock["packages"][""]["dependencies"]["@mermaid-js/mermaid-cli"],
-            "11.16.0",
+            lock["packages"][""]["dependencies"][dependency],
+            pinned,
+            "lockfile root dependency must match package.json",
+        )
+        self.assertEqual(
+            lock["packages"][f"node_modules/{dependency}"]["version"],
+            pinned,
+            "resolved mermaid-cli version must match package.json",
         )
 
     def test_publication_workflows_build_and_verify_pdf_html_and_checksums(self):

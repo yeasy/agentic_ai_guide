@@ -72,13 +72,24 @@ jobs:
           sudo dpkg -i "$package"
           pandoc --version | head -1
 
+      - name: Set up Node.js for Mermaid
+        uses: actions/setup-node@949feb2413d6458794dcd2491c4babbbce0c15c1 # v7.1.0
+        with:
+          node-version: "24.22.3"
+          package-manager-cache: false
+
       - name: Install locked Mermaid CLI
         run: |
           PUPPETEER_SKIP_DOWNLOAD=true npm ci --prefix tools/mermaid --ignore-scripts
+          node --version
+          npm ls --prefix tools/mermaid --all @mermaid-js/mermaid-cli mermaid puppeteer
           echo "$GITHUB_WORKSPACE/tools/mermaid/node_modules/.bin" >> "$GITHUB_PATH"
 
       - name: Build PDF and HTML
+        env:
+          CHROME_BIN: ${{ steps.setupchrome.outputs.chrome-path }}
         run: |
+          "$CHROME_BIN" --version
           # mdPress PDF generation drives headless Chrome, which intermittently dies with
           # "websocket url timeout reached" + dbus errors. Retry the build, not the whole job.
           mdpress() { local a; for a in 1 2 3; do command mdpress "$@" && return 0;
