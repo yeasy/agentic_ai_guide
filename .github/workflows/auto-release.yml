@@ -25,12 +25,6 @@ jobs:
           python3 -m unittest discover -s tests -p 'test_*.py' -v
           python3 check_project_rules.py
 
-      - name: Set up Chrome
-        id: setupchrome
-        uses: browser-actions/setup-chrome@48ad923757ca74d66703209fe939badbdf80f2f4 # v2.2.0
-        with:
-          chrome-version: stable
-
       - name: Install CJK fonts and PDF inspection tools
         run: |
           sudo apt-get update
@@ -99,7 +93,8 @@ jobs:
 
       - name: Build release PDF and HTML
         env:
-          CHROME_BIN: ${{ steps.setupchrome.outputs.chrome-path }}
+          # Use the GitHub runner browser with its Ubuntu AppArmor profile.
+          CHROME_BIN: /usr/bin/google-chrome
           SAFE_TAG_NAME: ${{ steps.tag.outputs.SAFE_TAG_NAME }}
         run: |
           "$CHROME_BIN" --version
